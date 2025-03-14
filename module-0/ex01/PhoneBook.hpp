@@ -9,12 +9,12 @@
 #include <cstdlib>
 #include <string>
 
-void    addSecret(Contact *newContact);
-void    addPhoneNumber(Contact *newContact);
-void    addNickName(Contact *newContact);
-void    addLastName(Contact *newContact);
-void    addFirstName(Contact *newContact);
-std::string removeWhiteSpace(std::string str, size_t len);
+void            addSecret(Contact *newContact);
+void            addPhoneNumber(Contact *newContact);
+void            addNickName(Contact *newContact);
+void            addLastName(Contact *newContact);
+void            addFirstName(Contact *newContact);
+std::string     removeWhiteSpace(std::string str, size_t len);
 
 
 class PhoneBook{
@@ -27,8 +27,6 @@ public:
     void    search();
     void    add();
     void    printContact(int index);
-
-    // ~PhoneBook();
 };
 
 #endif

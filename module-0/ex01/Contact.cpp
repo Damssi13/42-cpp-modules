@@ -1,6 +1,6 @@
 #include "PhoneBook.hpp"
 
-/*____________Setters_____________*/
+/*____________SETTERS_____________*/
 void    Contact::setFirstName(std::string name)
 {
     firstName = name;
@@ -22,7 +22,7 @@ void    Contact::setDarkestSecret(std::string secret)
     darkestSecret = secret;
 }
 
-/*____________Getters_____________*/
+/*____________GETTERS_____________*/
 std::string     Contact::getFirstName()
 {
     return firstName;

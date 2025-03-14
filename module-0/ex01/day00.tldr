@@ -1,0 +1,1274 @@
+{
+	"tldrawFileFormatVersion": 1,
+	"schema": {
+		"schemaVersion": 2,
+		"sequences": {
+			"com.tldraw.store": 4,
+			"com.tldraw.asset": 1,
+			"com.tldraw.camera": 1,
+			"com.tldraw.document": 2,
+			"com.tldraw.instance": 25,
+			"com.tldraw.instance_page_state": 5,
+			"com.tldraw.page": 1,
+			"com.tldraw.instance_presence": 6,
+			"com.tldraw.pointer": 1,
+			"com.tldraw.shape": 4,
+			"com.tldraw.asset.bookmark": 2,
+			"com.tldraw.asset.image": 5,
+			"com.tldraw.asset.video": 5,
+			"com.tldraw.shape.group": 0,
+			"com.tldraw.shape.text": 3,
+			"com.tldraw.shape.bookmark": 2,
+			"com.tldraw.shape.draw": 2,
+			"com.tldraw.shape.geo": 10,
+			"com.tldraw.shape.note": 9,
+			"com.tldraw.shape.line": 5,
+			"com.tldraw.shape.frame": 0,
+			"com.tldraw.shape.arrow": 5,
+			"com.tldraw.shape.highlight": 1,
+			"com.tldraw.shape.embed": 4,
+			"com.tldraw.shape.image": 4,
+			"com.tldraw.shape.video": 2,
+			"com.tldraw.binding.arrow": 0
+		}
+	},
+	"records": [
+		{
+			"gridSize": 10,
+			"name": "",
+			"meta": {},
+			"id": "document:document",
+			"typeName": "document"
+		},
+		{
+			"meta": {},
+			"id": "page:page",
+			"name": "Page 1",
+			"index": "a1",
+			"typeName": "page"
+		},
+		{
+			"id": "pointer:pointer",
+			"typeName": "pointer",
+			"x": 267,
+			"y": 93,
+			"lastActivityTimestamp": 1741963158995,
+			"meta": {}
+		},
+		{
+			"followingUserId": null,
+			"opacityForNextShape": 1,
+			"stylesForNextShape": {},
+			"brush": null,
+			"scribbles": [],
+			"cursor": {
+				"type": "default",
+				"rotation": 0
+			},
+			"isFocusMode": false,
+			"exportBackground": true,
+			"isDebugMode": false,
+			"isToolLocked": false,
+			"screenBounds": {
+				"x": 0,
+				"y": 0,
+				"w": 1702,
+				"h": 934
+			},
+			"insets": [
+				false,
+				false,
+				true,
+				false
+			],
+			"zoomBrush": null,
+			"isGridMode": false,
+			"isPenMode": false,
+			"chatMessage": "",
+			"isChatting": false,
+			"highlightedUserIds": [],
+			"isFocused": true,
+			"devicePixelRatio": 1,
+			"isCoarsePointer": false,
+			"isHoveringCanvas": true,
+			"openMenus": [],
+			"isChangingStyle": false,
+			"isReadonly": false,
+			"meta": {},
+			"duplicateProps": null,
+			"id": "instance:instance",
+			"currentPageId": "page:page",
+			"typeName": "instance"
+		},
+		{
+			"editingShapeId": null,
+			"croppingShapeId": null,
+			"selectedShapeIds": [
+				"shape:lvDae9U6JPRj49x8HTgFn",
+				"shape:SndFi8s_jx1pgMIHLA1Ko",
+				"shape:BJJqjpSq1cV0jMCDEVU25",
+				"shape:8Tg3c3fl6BQTxR7kAux40",
+				"shape:JU7dBU8cfqSvE5ehhcU9a",
+				"shape:j3I8dOcaooLtA_7xE7te1",
+				"shape:15b5n8k-b2BnCwQc4w_jQ",
+				"shape:DJ3-5N9QOk4eoi1V3U8zJ",
+				"shape:DmDZvuUrdBRX3gNMaSIt8",
+				"shape:Mz1kGweLeLIvgiQk5jqPR",
+				"shape:jzu9zCuWB1FsjSnbQKbIM",
+				"shape:7785tDHvLnp_-xq8tJz_c",
+				"shape:aCZCMJ7TkPR3-2mpUheiF",
+				"shape:vOa1BUHsNjKrmsCkLCflf",
+				"shape:XIVsAFGrRJUp5u1EoCG-e",
+				"shape:lguPQB8TkNnzYOhcVr7nt",
+				"shape:tfP5rMMau-dswDIrYLOM-",
+				"shape:Xq_dlNDN4LXe6CF-YnOh0",
+				"shape:VekYpZN46nO-a2eX45wYs",
+				"shape:dRFZX35cctB9UKTIqVDBW",
+				"shape:F_zsfOwmf72pVF3Z2b0I7",
+				"shape:8p3AQN0J-KKoVM7zZdIfi"
+			],
+			"hoveredShapeId": "shape:DJ3-5N9QOk4eoi1V3U8zJ",
+			"erasingShapeIds": [],
+			"hintingShapeIds": [],
+			"focusedGroupId": null,
+			"meta": {},
+			"id": "instance_page_state:page:page",
+			"pageId": "page:page",
+			"typeName": "instance_page_state"
+		},
+		{
+			"x": 851,
+			"y": 467,
+			"z": 0.5,
+			"meta": {},
+			"id": "camera:page:page",
+			"typeName": "camera"
+		},
+		{
+			"x": 23.120027416506673,
+			"y": -273.50007008515524,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:lvDae9U6JPRj49x8HTgFn",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 157,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 5.235310737546422,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Side Ideas"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a1",
+			"typeName": "shape"
+		},
+		{
+			"x": -13.980681847780716,
+			"y": -117.28459833831346,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:SndFi8s_jx1pgMIHLA1Ko",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"points": [
+							{
+								"x": 0,
+								"y": 0,
+								"z": 0.5
+							},
+							{
+								"x": 3.6,
+								"y": 0,
+								"z": 0.5
+							},
+							{
+								"x": 16.8,
+								"y": -4.8,
+								"z": 0.5
+							},
+							{
+								"x": 43.19,
+								"y": -4.8,
+								"z": 0.5
+							},
+							{
+								"x": 100.78,
+								"y": -4.8,
+								"z": 0.5
+							},
+							{
+								"x": 147.57,
+								"y": -4.8,
+								"z": 0.5
+							},
+							{
+								"x": 194.36,
+								"y": -4.8,
+								"z": 0.5
+							},
+							{
+								"x": 232.76,
+								"y": -4.8,
+								"z": 0.5
+							},
+							{
+								"x": 266.35,
+								"y": -4.8,
+								"z": 0.5
+							},
+							{
+								"x": 289.15,
+								"y": -4.8,
+								"z": 0.5
+							},
+							{
+								"x": 313.14,
+								"y": -4.8,
+								"z": 0.5
+							},
+							{
+								"x": 340.74,
+								"y": -4.8,
+								"z": 0.5
+							},
+							{
+								"x": 365.93,
+								"y": -4.8,
+								"z": 0.5
+							},
+							{
+								"x": 392.33,
+								"y": -4.8,
+								"z": 0.5
+							},
+							{
+								"x": 417.52,
+								"y": -4.8,
+								"z": 0.5
+							},
+							{
+								"x": 458.32,
+								"y": -6,
+								"z": 0.5
+							},
+							{
+								"x": 483.51,
+								"y": -8.4,
+								"z": 0.5
+							},
+							{
+								"x": 505.11,
+								"y": -8.4,
+								"z": 0.5
+							},
+							{
+								"x": 526.7,
+								"y": -8.4,
+								"z": 0.5
+							},
+							{
+								"x": 553.1,
+								"y": -8.4,
+								"z": 0.5
+							},
+							{
+								"x": 583.09,
+								"y": -8.4,
+								"z": 0.5
+							},
+							{
+								"x": 617.89,
+								"y": -8.4,
+								"z": 0.5
+							},
+							{
+								"x": 658.68,
+								"y": -8.4,
+								"z": 0.5
+							},
+							{
+								"x": 691.07,
+								"y": -8.4,
+								"z": 0.5
+							},
+							{
+								"x": 723.47,
+								"y": -8.4,
+								"z": 0.5
+							},
+							{
+								"x": 760.66,
+								"y": -8.4,
+								"z": 0.5
+							},
+							{
+								"x": 787.06,
+								"y": -8.4,
+								"z": 0.5
+							},
+							{
+								"x": 814.65,
+								"y": -8.4,
+								"z": 0.5
+							},
+							{
+								"x": 837.45,
+								"y": -8.4,
+								"z": 0.5
+							},
+							{
+								"x": 857.84,
+								"y": -8.4,
+								"z": 0.5
+							},
+							{
+								"x": 873.44,
+								"y": -8.4,
+								"z": 0.5
+							},
+							{
+								"x": 884.24,
+								"y": -8.4,
+								"z": 0.5
+							},
+							{
+								"x": 890.24,
+								"y": -8.4,
+								"z": 0.5
+							},
+							{
+								"x": 897.44,
+								"y": -10.8,
+								"z": 0.5
+							},
+							{
+								"x": 904.64,
+								"y": -12,
+								"z": 0.5
+							},
+							{
+								"x": 914.23,
+								"y": -12,
+								"z": 0.5
+							},
+							{
+								"x": 925.03,
+								"y": -12,
+								"z": 0.5
+							},
+							{
+								"x": 935.83,
+								"y": -12,
+								"z": 0.5
+							},
+							{
+								"x": 949.03,
+								"y": -12,
+								"z": 0.5
+							},
+							{
+								"x": 959.83,
+								"y": -12,
+								"z": 0.5
+							},
+							{
+								"x": 965.83,
+								"y": -12,
+								"z": 0.5
+							}
+						]
+					}
+				],
+				"color": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": false,
+				"isPen": false,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a26MA",
+			"typeName": "shape"
+		},
+		{
+			"x": -171.1522305247904,
+			"y": -17.94633063322351,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:BJJqjpSq1cV0jMCDEVU25",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 130.609375,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1.1997828143283182,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "#pragma: "
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a39y2",
+			"typeName": "shape"
+		},
+		{
+			"x": -25.978509991063902,
+			"y": -18.90240756339142,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:8Tg3c3fl6BQTxR7kAux40",
+			"type": "text",
+			"props": {
+				"color": "light-blue",
+				"size": "m",
+				"w": 1052.203125,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1.1997828143283182,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "does many things like blocking a function or run it before the main etc.."
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a4A3b",
+			"typeName": "shape"
+		},
+		{
+			"x": -174.75157896777546,
+			"y": 39.88695033869624,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:JU7dBU8cfqSvE5ehhcU9a",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 188.203125,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1.1997828143283182,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "typecasting: "
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a54pe",
+			"typeName": "shape"
+		},
+		{
+			"x": 60.40585264057495,
+			"y": 37.48738471003958,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:j3I8dOcaooLtA_7xE7te1",
+			"type": "text",
+			"props": {
+				"color": "light-blue",
+				"size": "m",
+				"w": 1052.203125,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1.1997828143283182,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "it takes the int from toupper as 32 bit and convert it to 8bit as in char"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a6549",
+			"typeName": "shape"
+		},
+		{
+			"x": -167.55288208180536,
+			"y": 101.07587386944044,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:15b5n8k-b2BnCwQc4w_jQ",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 116.203125,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1.1997828143283182,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "<< & >>:"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a706w",
+			"typeName": "shape"
+		},
+		{
+			"x": -7.981767776139122,
+			"y": 99.87609105511217,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:DJ3-5N9QOk4eoi1V3U8zJ",
+			"type": "text",
+			"props": {
+				"color": "light-blue",
+				"size": "m",
+				"w": 865,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1.1997828143283182,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "insert and extract from are objects from ostream and istream"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a84jm",
+			"typeName": "shape"
+		},
+		{
+			"x": -178.3509274107605,
+			"y": 164.6643630288413,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:DmDZvuUrdBRX3gNMaSIt8",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 260.203125,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1.1997828143283182,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "scope resoloution:"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a9Apg",
+			"typeName": "shape"
+		},
+		{
+			"x": 143.19086682922898,
+			"y": 163.46458021451303,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:Mz1kGweLeLIvgiQk5jqPR",
+			"type": "text",
+			"props": {
+				"color": "light-blue",
+				"size": "m",
+				"w": 1167.40625,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1.1997828143283182,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "it is the double colon :: that tells the compiler where to look for an identifier"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aA7cV",
+			"typeName": "shape"
+		},
+		{
+			"x": -176.72651650802527,
+			"y": 240.53204760256278,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:jzu9zCuWB1FsjSnbQKbIM",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 188.203125,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1.1997828143283182,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "stringstream:"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aB3tW",
+			"typeName": "shape"
+		},
+		{
+			"x": 69.22896042927982,
+			"y": 239.3322647882344,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:7785tDHvLnp_-xq8tJz_c",
+			"type": "text",
+			"props": {
+				"color": "light-blue",
+				"size": "m",
+				"w": 879.40625,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1.1997828143283182,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "is a class derived from iostream that make string as stream  "
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aC7jw",
+			"typeName": "shape"
+		},
+		{
+			"x": -176.72651650802527,
+			"y": 307.7198852049486,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:aCZCMJ7TkPR3-2mpUheiF",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 202.609375,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1.1997828143283182,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "encapsulation:"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aD94L",
+			"typeName": "shape"
+		},
+		{
+			"x": 74.02809168659314,
+			"y": 306.5201023906203,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:vOa1BUHsNjKrmsCkLCflf",
+			"type": "text",
+			"props": {
+				"color": "light-blue",
+				"size": "m",
+				"w": 937,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1.1997828143283182,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Bundling data and the methods that operate on it within a class, "
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "restricting direct access to some components."
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aE37J",
+			"typeName": "shape"
+		},
+		{
+			"x": -180.32586495101032,
+			"y": 396.50381346524415,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:XIVsAFGrRJUp5u1EoCG-e",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 188.203125,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1.1997828143283182,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "abstraction: "
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aF8pT",
+			"typeName": "shape"
+		},
+		{
+			"x": 41.63395569972863,
+			"y": 397.7035962795725,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:lguPQB8TkNnzYOhcVr7nt",
+			"type": "text",
+			"props": {
+				"color": "light-blue",
+				"size": "m",
+				"w": 1037.8125,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1.1997828143283182,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "hiding complex implementation details and exposing only simple interface"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aG4Mr",
+			"typeName": "shape"
+		},
+		{
+			"x": -183.92521339399536,
+			"y": 454.0933885530034,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:tfP5rMMau-dswDIrYLOM-",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 188.203125,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1.1997828143283182,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Constructor: "
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aH4Tn",
+			"typeName": "shape"
+		},
+		{
+			"x": 30.835910370773718,
+			"y": 454.0933885530034,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:Xq_dlNDN4LXe6CF-YnOh0",
+			"type": "text",
+			"props": {
+				"color": "light-blue",
+				"size": "m",
+				"w": 1369,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1.1997828143283182,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "is a special member function that has same name to the class and returns nothing, not even void"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "it is called when once the object is created"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aI7BI",
+			"typeName": "shape"
+		},
+		{
+			"x": -185.1249962083234,
+			"y": 586.0694981291184,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:VekYpZN46nO-a2eX45wYs",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 231.40625,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1.1997828143283182,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "struct vs class:"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aJ7JF",
+			"typeName": "shape"
+		},
+		{
+			"x": 95.62418234450274,
+			"y": 583.6699325004618,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:dRFZX35cctB9UKTIqVDBW",
+			"type": "text",
+			"props": {
+				"color": "light-blue",
+				"size": "m",
+				"w": 1455.40625,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1.1997828143283182,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "almost the same thing the only difference is that classes set their data to private while structs"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "set it to public by default, class is used because it lays with the oop consepts(Just philosphically)"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aK4wz",
+			"typeName": "shape"
+		},
+		{
+			"x": -186.3247790226519,
+			"y": 679.6525576467272,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:F_zsfOwmf72pVF3Z2b0I7",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 217,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1.1997828143283182,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "std::string UH:"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aL0eP",
+			"typeName": "shape"
+		},
+		{
+			"x": 88.42548545853288,
+			"y": 676.0532092037423,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:8p3AQN0J-KKoVM7zZdIfi",
+			"type": "text",
+			"props": {
+				"color": "light-blue",
+				"size": "m",
+				"w": 1570.609375,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1.1997828143283182,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "string is class provided by <string> it allocates in the heap, unless the length of the string is small"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "then it allocates in the stack it does that using SSO(small string Optimization) it resize the string if "
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "+= is used, its capacity is the size_t, it does not use null terminator to know the end of the string but it "
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "uses the size/length member function to know where to terminate."
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aMB9y",
+			"typeName": "shape"
+		}
+	]
+}

@@ -1,6 +1,5 @@
 #include "PhoneBook.hpp"
 
-
 int main()
 {
     PhoneBook book;
@@ -10,7 +9,6 @@ int main()
         std::string input;
         std::cout << "Enter a command: ";
 
-
         if(!std::getline(std::cin, input) || std::cin.eof())
         {
             std::cout << "\nExited\n"; 
@@ -18,16 +16,14 @@ int main()
         }
         input = removeWhiteSpace(input, input.size());
         if(input == "SEARCH")
-        {
             book.search();
-        }
+
         else if(input == "ADD")
-        {
             book.add();
-        }
+
         else if(input == "EXIT")
         {
-            std::cout << "Good Bye, Contacts lost to the void\n";    
+            std::cout << "GOOD BYE, Contacts are lost to the void\n";    
             break ;
         }
         else

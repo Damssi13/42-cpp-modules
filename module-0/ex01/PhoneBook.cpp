@@ -1,34 +1,29 @@
 #include "PhoneBook.hpp"
 
-
-
 PhoneBook::PhoneBook() : contactIndex(0) {}
-
 
 std::string removeWhiteSpace(std::string str, size_t len)
 {
     std::string removed;
-
+    
     for(size_t i = 0; i < len; i++)
     {
         if(str[i] != ' ' && str[i] != '\t')
-            removed += str[i];
+        removed += str[i];
     }
     return removed;
 }
 
-
-//Returns true if it finds a non-digit
 bool    isNumber(std::string input)
 {
     for(size_t i = 0; i < input.length();)
     {
         if(isdigit(input[i]))
-            i++;
+        i++;
         else
-            return true;
+        return false;
     }
-    return false;
+    return true;
 }
 
 bool    isValid(std::string input)
@@ -36,26 +31,31 @@ bool    isValid(std::string input)
     for(size_t i = 0; i < input.length();)
     {
         if(isprint(input[i]))
-            i++;
+        i++;
         else
-            return true;
+        return false;
     }
-    return false;
+    return true;
 }
+
 bool    isChar(std::string input)
 {
     for(size_t i = 0; i < input.length();)
     {
         if(isalpha(input[i]))
-            i++;
+        i++;
         else
-            return true;
+        return false;
     }
-    return false;
+    return true;
 }
 
-
-
+std::string truncate(std::string text)
+{
+    if(text.length() > 10)
+        return (text.substr(0,9) + ".");
+    return text;
+}
 
 void    addFirstName(Contact *newContact)
 {
@@ -72,10 +72,8 @@ void    addFirstName(Contact *newContact)
             }
             std::cout << "Try Again!\n";
         }
-        else if(input.empty() || isChar(input))
-        {
+        else if(input.empty() || !isChar(input))
             std::cout << "Try Again!\n";
-        }
         else
         {
             newContact->setFirstName(input);
@@ -83,6 +81,7 @@ void    addFirstName(Contact *newContact)
         }
     }
 }
+
 void    addLastName(Contact *newContact)
 {
     std::string input;
@@ -98,10 +97,8 @@ void    addLastName(Contact *newContact)
             }
             std::cout << "Try Again!\n";
         }
-        else if(input.empty() || isChar(input))
-        {
+        else if(input.empty() || !isChar(input))
             std::cout << "Try Again!\n";
-        }
         else
         {
             newContact->setLastName(input);
@@ -109,6 +106,7 @@ void    addLastName(Contact *newContact)
         }
     }
 }
+
 void    addNickName(Contact *newContact)
 {
     std::string input;
@@ -124,10 +122,8 @@ void    addNickName(Contact *newContact)
             }
             std::cout << "Try Again!\n";
         }
-        else if(input.empty() || isValid(input))
-        {
+        else if(input.empty() || !isValid(input))
             std::cout << "Try Again!\n";
-        }
         else
         {
             newContact->setNickName(input);
@@ -135,6 +131,7 @@ void    addNickName(Contact *newContact)
         }
     }
 }
+
 void    addPhoneNumber(Contact *newContact)
 {
     std::string input;
@@ -150,10 +147,8 @@ void    addPhoneNumber(Contact *newContact)
             }
             std::cout << "Try Again!\n";
         }
-        else if(input.empty() || isNumber(input))
-        {
+        else if(input.empty() || !isNumber(input) || input.length() != 10)
             std::cout << "Try Again!\n";
-        }
         else
         {
             newContact->setPhoneNumber(input);
@@ -161,6 +156,7 @@ void    addPhoneNumber(Contact *newContact)
         }
     }
 }
+
 void    addSecret(Contact *newContact)
 {
     std::string input;
@@ -176,10 +172,8 @@ void    addSecret(Contact *newContact)
             }
             std::cout << "Try Again!\n";
         }
-        else if(input.empty() || isValid(input))
-        {
+        else if(input.empty() || !isValid(input))
             std::cout << "Try Again!\n";
-        }
         else
         {
             newContact->setDarkestSecret(input);
@@ -193,26 +187,14 @@ void    PhoneBook::add()
     Contact newContact;
 
     addFirstName(&newContact);
-
     addLastName(&newContact);
-
     addNickName(&newContact);
-
     addPhoneNumber(&newContact);
-
     addSecret(&newContact);
-
     contacts[contactIndex % 8] = newContact;
     contactIndex++;  
     std::cout << "CONTACT ADDED !\n";
 
-}
-
-std::string truncate(std::string text)
-{
-    if(text.length() > 10)
-        return (text.substr(0,9) + ".");
-    return text;
 }
 
 void    PhoneBook::search()
@@ -252,12 +234,11 @@ void    PhoneBook::search()
                 exit(1);
             }
             std::cout << "NOT VALID!\n";
-
         }
         std::stringstream ss(input);
         ss >> index;
-        if((input.empty() || isNumber(input)) || (index < 0 || index >= limit))
-            std::cout << "NOT VALID!\n" << "Enter an index in this range: 0 - " << limit - 1<< std::endl ;
+        if((input.empty() || !isNumber(input)) || (index < 0 || index >= limit))
+            std::cout << "NOT VALID!\n" << "Enter an index in this range: 0 - " << limit - 1 << std::endl ;
         else
             break ;
     }
@@ -271,4 +252,5 @@ void    PhoneBook::printContact(int index)
                 << "\nNick Name     : " << contacts[index].getNickName()
                 << "\nPhone Number  : " << contacts[index].getPhoneNumber()
                 << "\nDarkest Secret: " << contacts[index].getDarkestSecret() << std::endl;
+
 }
