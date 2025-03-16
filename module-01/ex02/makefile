@@ -1,7 +1,7 @@
-NAME = megaphone
+NAME = zombie
 CXX = c++ 
 CXXFLAGS = -std=c++98 -Wall -Werror -Wextra
-SRCS = megaphone.cpp
+SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 $(NAME): $(OBJS)

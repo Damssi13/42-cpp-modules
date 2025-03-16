@@ -1,0 +1,940 @@
+{
+	"tldrawFileFormatVersion": 1,
+	"schema": {
+		"schemaVersion": 2,
+		"sequences": {
+			"com.tldraw.store": 4,
+			"com.tldraw.asset": 1,
+			"com.tldraw.camera": 1,
+			"com.tldraw.document": 2,
+			"com.tldraw.instance": 25,
+			"com.tldraw.instance_page_state": 5,
+			"com.tldraw.page": 1,
+			"com.tldraw.instance_presence": 6,
+			"com.tldraw.pointer": 1,
+			"com.tldraw.shape": 4,
+			"com.tldraw.asset.bookmark": 2,
+			"com.tldraw.asset.image": 5,
+			"com.tldraw.asset.video": 5,
+			"com.tldraw.shape.group": 0,
+			"com.tldraw.shape.text": 3,
+			"com.tldraw.shape.bookmark": 2,
+			"com.tldraw.shape.draw": 2,
+			"com.tldraw.shape.geo": 10,
+			"com.tldraw.shape.note": 9,
+			"com.tldraw.shape.line": 5,
+			"com.tldraw.shape.frame": 0,
+			"com.tldraw.shape.arrow": 5,
+			"com.tldraw.shape.highlight": 1,
+			"com.tldraw.shape.embed": 4,
+			"com.tldraw.shape.image": 4,
+			"com.tldraw.shape.video": 2,
+			"com.tldraw.binding.arrow": 0
+		}
+	},
+	"records": [
+		{
+			"gridSize": 10,
+			"name": "",
+			"meta": {},
+			"id": "document:document",
+			"typeName": "document"
+		},
+		{
+			"meta": {},
+			"id": "page:page",
+			"name": "Page 1",
+			"index": "a1",
+			"typeName": "page"
+		},
+		{
+			"x": 277.2000427246094,
+			"y": 293.4000137138368,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:KcFNG9Ei2WVpaPFHej704",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 159.97500610351562,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 5.499421555346194,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Side Ideas"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a1",
+			"typeName": "shape"
+		},
+		{
+			"x": 250.01251220703125,
+			"y": 451.81876447677627,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:VQ4tOzrQsKvw8BOcAs1YO",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"points": [
+							{
+								"x": 0,
+								"y": 0,
+								"z": 0.5
+							},
+							{
+								"x": -0.41,
+								"y": -0.62,
+								"z": 0.5
+							},
+							{
+								"x": 1.99,
+								"y": -3.02,
+								"z": 0.5
+							},
+							{
+								"x": 5.59,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 6.79,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 7.99,
+								"y": -5.42,
+								"z": 0.5
+							},
+							{
+								"x": 11.59,
+								"y": -5.42,
+								"z": 0.5
+							},
+							{
+								"x": 15.19,
+								"y": -5.42,
+								"z": 0.5
+							},
+							{
+								"x": 18.79,
+								"y": -5.42,
+								"z": 0.5
+							},
+							{
+								"x": 29.59,
+								"y": -3.02,
+								"z": 0.5
+							},
+							{
+								"x": 34.39,
+								"y": -3.02,
+								"z": 0.5
+							},
+							{
+								"x": 46.39,
+								"y": -1.82,
+								"z": 0.5
+							},
+							{
+								"x": 52.39,
+								"y": -0.62,
+								"z": 0.5
+							},
+							{
+								"x": 59.59,
+								"y": 0.58,
+								"z": 0.5
+							},
+							{
+								"x": 75.19,
+								"y": 2.98,
+								"z": 0.5
+							},
+							{
+								"x": 83.59,
+								"y": 2.98,
+								"z": 0.5
+							},
+							{
+								"x": 99.19,
+								"y": 4.18,
+								"z": 0.5
+							},
+							{
+								"x": 108.79,
+								"y": 4.18,
+								"z": 0.5
+							},
+							{
+								"x": 124.39,
+								"y": 4.18,
+								"z": 0.5
+							},
+							{
+								"x": 125.59,
+								"y": 4.18,
+								"z": 0.5
+							},
+							{
+								"x": 131.59,
+								"y": 4.18,
+								"z": 0.5
+							},
+							{
+								"x": 139.99,
+								"y": 6.58,
+								"z": 0.5
+							},
+							{
+								"x": 145.99,
+								"y": 6.58,
+								"z": 0.5
+							},
+							{
+								"x": 154.39,
+								"y": 6.58,
+								"z": 0.5
+							},
+							{
+								"x": 161.59,
+								"y": 6.58,
+								"z": 0.5
+							},
+							{
+								"x": 167.59,
+								"y": 6.58,
+								"z": 0.5
+							},
+							{
+								"x": 177.19,
+								"y": 6.58,
+								"z": 0.5
+							},
+							{
+								"x": 181.99,
+								"y": 4.18,
+								"z": 0.5
+							},
+							{
+								"x": 192.79,
+								"y": 2.98,
+								"z": 0.5
+							},
+							{
+								"x": 197.59,
+								"y": 2.98,
+								"z": 0.5
+							},
+							{
+								"x": 202.39,
+								"y": 1.78,
+								"z": 0.5
+							},
+							{
+								"x": 211.99,
+								"y": 0.58,
+								"z": 0.5
+							},
+							{
+								"x": 216.79,
+								"y": 0.58,
+								"z": 0.5
+							},
+							{
+								"x": 226.39,
+								"y": -0.62,
+								"z": 0.5
+							},
+							{
+								"x": 231.19,
+								"y": -1.82,
+								"z": 0.5
+							},
+							{
+								"x": 235.99,
+								"y": -3.02,
+								"z": 0.5
+							},
+							{
+								"x": 241.99,
+								"y": -3.02,
+								"z": 0.5
+							},
+							{
+								"x": 245.59,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 253.99,
+								"y": -5.42,
+								"z": 0.5
+							},
+							{
+								"x": 259.99,
+								"y": -5.42,
+								"z": 0.5
+							},
+							{
+								"x": 264.79,
+								"y": -6.62,
+								"z": 0.5
+							},
+							{
+								"x": 274.39,
+								"y": -6.62,
+								"z": 0.5
+							},
+							{
+								"x": 282.79,
+								"y": -7.82,
+								"z": 0.5
+							},
+							{
+								"x": 287.59,
+								"y": -7.82,
+								"z": 0.5
+							},
+							{
+								"x": 292.39,
+								"y": -7.82,
+								"z": 0.5
+							},
+							{
+								"x": 301.99,
+								"y": -9.02,
+								"z": 0.5
+							},
+							{
+								"x": 306.79,
+								"y": -9.02,
+								"z": 0.5
+							},
+							{
+								"x": 316.39,
+								"y": -9.02,
+								"z": 0.5
+							},
+							{
+								"x": 322.39,
+								"y": -9.02,
+								"z": 0.5
+							},
+							{
+								"x": 333.19,
+								"y": -9.02,
+								"z": 0.5
+							},
+							{
+								"x": 337.99,
+								"y": -9.02,
+								"z": 0.5
+							},
+							{
+								"x": 342.79,
+								"y": -9.02,
+								"z": 0.5
+							},
+							{
+								"x": 349.99,
+								"y": -9.02,
+								"z": 0.5
+							},
+							{
+								"x": 359.59,
+								"y": -9.02,
+								"z": 0.5
+							},
+							{
+								"x": 371.59,
+								"y": -7.82,
+								"z": 0.5
+							},
+							{
+								"x": 378.79,
+								"y": -5.42,
+								"z": 0.5
+							},
+							{
+								"x": 383.59,
+								"y": -5.42,
+								"z": 0.5
+							},
+							{
+								"x": 395.59,
+								"y": -5.42,
+								"z": 0.5
+							},
+							{
+								"x": 400.39,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 407.59,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 417.19,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 423.19,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 433.99,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 438.79,
+								"y": -3.02,
+								"z": 0.5
+							},
+							{
+								"x": 449.59,
+								"y": -3.02,
+								"z": 0.5
+							},
+							{
+								"x": 455.59,
+								"y": -3.02,
+								"z": 0.5
+							},
+							{
+								"x": 465.19,
+								"y": -3.02,
+								"z": 0.5
+							},
+							{
+								"x": 471.19,
+								"y": -3.02,
+								"z": 0.5
+							},
+							{
+								"x": 475.99,
+								"y": -3.02,
+								"z": 0.5
+							},
+							{
+								"x": 486.79,
+								"y": -3.02,
+								"z": 0.5
+							},
+							{
+								"x": 491.59,
+								"y": -3.02,
+								"z": 0.5
+							},
+							{
+								"x": 497.59,
+								"y": -3.02,
+								"z": 0.5
+							},
+							{
+								"x": 502.39,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 507.19,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 516.79,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 521.59,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 531.19,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 535.99,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 541.99,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 552.79,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 557.59,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 568.39,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 574.39,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 586.39,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 592.39,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 597.19,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 607.99,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 612.79,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 624.79,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 629.59,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 634.39,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 646.39,
+								"y": -4.22,
+								"z": 0.5
+							},
+							{
+								"x": 651.19,
+								"y": -3.02,
+								"z": 0.5
+							},
+							{
+								"x": 661.99,
+								"y": -3.02,
+								"z": 0.5
+							},
+							{
+								"x": 667.99,
+								"y": -3.02,
+								"z": 0.5
+							},
+							{
+								"x": 672.79,
+								"y": -3.02,
+								"z": 0.5
+							},
+							{
+								"x": 683.59,
+								"y": -1.82,
+								"z": 0.5
+							},
+							{
+								"x": 688.39,
+								"y": -1.82,
+								"z": 0.5
+							},
+							{
+								"x": 700.39,
+								"y": -0.62,
+								"z": 0.5
+							},
+							{
+								"x": 705.19,
+								"y": -0.62,
+								"z": 0.5
+							},
+							{
+								"x": 709.99,
+								"y": -0.62,
+								"z": 0.5
+							},
+							{
+								"x": 721.99,
+								"y": 0.58,
+								"z": 0.5
+							},
+							{
+								"x": 726.79,
+								"y": 0.58,
+								"z": 0.5
+							},
+							{
+								"x": 737.59,
+								"y": 0.58,
+								"z": 0.5
+							},
+							{
+								"x": 742.39,
+								"y": 0.58,
+								"z": 0.5
+							},
+							{
+								"x": 748.39,
+								"y": 0.58,
+								"z": 0.5
+							},
+							{
+								"x": 759.19,
+								"y": 0.58,
+								"z": 0.5
+							},
+							{
+								"x": 765.19,
+								"y": 0.58,
+								"z": 0.5
+							},
+							{
+								"x": 775.99,
+								"y": 0.58,
+								"z": 0.5
+							},
+							{
+								"x": 781.99,
+								"y": 0.58,
+								"z": 0.5
+							},
+							{
+								"x": 793.99,
+								"y": 1.78,
+								"z": 0.5
+							},
+							{
+								"x": 798.79,
+								"y": 1.78,
+								"z": 0.5
+							},
+							{
+								"x": 804.79,
+								"y": 1.78,
+								"z": 0.5
+							},
+							{
+								"x": 816.79,
+								"y": 1.78,
+								"z": 0.5
+							},
+							{
+								"x": 821.59,
+								"y": 2.98,
+								"z": 0.5
+							},
+							{
+								"x": 833.59,
+								"y": 2.98,
+								"z": 0.5
+							},
+							{
+								"x": 838.39,
+								"y": 2.98,
+								"z": 0.5
+							},
+							{
+								"x": 843.19,
+								"y": 2.98,
+								"z": 0.5
+							},
+							{
+								"x": 855.19,
+								"y": 2.98,
+								"z": 0.5
+							},
+							{
+								"x": 859.99,
+								"y": 2.98,
+								"z": 0.5
+							},
+							{
+								"x": 864.79,
+								"y": 2.98,
+								"z": 0.5
+							},
+							{
+								"x": 876.79,
+								"y": 2.98,
+								"z": 0.5
+							},
+							{
+								"x": 881.59,
+								"y": 2.98,
+								"z": 0.5
+							},
+							{
+								"x": 891.19,
+								"y": 2.98,
+								"z": 0.5
+							},
+							{
+								"x": 895.99,
+								"y": 2.98,
+								"z": 0.5
+							},
+							{
+								"x": 899.59,
+								"y": 2.98,
+								"z": 0.5
+							},
+							{
+								"x": 903.19,
+								"y": 2.98,
+								"z": 0.5
+							},
+							{
+								"x": 904.39,
+								"y": 2.98,
+								"z": 0.5
+							},
+							{
+								"x": 905.59,
+								"y": 2.98,
+								"z": 0.5
+							}
+						]
+					}
+				],
+				"color": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": false,
+				"isPen": false,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a29Cg",
+			"typeName": "shape"
+		},
+		{
+			"id": "pointer:pointer",
+			"typeName": "pointer",
+			"x": 1238.7657402020782,
+			"y": 754.2178661661256,
+			"lastActivityTimestamp": 1742121253260,
+			"meta": {}
+		},
+		{
+			"followingUserId": null,
+			"opacityForNextShape": 1,
+			"stylesForNextShape": {
+				"tldraw:font": "mono",
+				"tldraw:color": "light-blue"
+			},
+			"brush": null,
+			"scribbles": [],
+			"cursor": {
+				"type": "default",
+				"rotation": 0
+			},
+			"isFocusMode": false,
+			"exportBackground": true,
+			"isDebugMode": false,
+			"isToolLocked": false,
+			"screenBounds": {
+				"x": 0,
+				"y": 0,
+				"w": 1420.800048828125,
+				"h": 768
+			},
+			"insets": [
+				false,
+				false,
+				true,
+				false
+			],
+			"zoomBrush": null,
+			"isGridMode": false,
+			"isPenMode": false,
+			"chatMessage": "",
+			"isChatting": false,
+			"highlightedUserIds": [],
+			"isFocused": true,
+			"devicePixelRatio": 0.8333333134651184,
+			"isCoarsePointer": false,
+			"isHoveringCanvas": true,
+			"openMenus": [],
+			"isChangingStyle": false,
+			"isReadonly": false,
+			"meta": {},
+			"duplicateProps": null,
+			"id": "instance:instance",
+			"currentPageId": "page:page",
+			"typeName": "instance"
+		},
+		{
+			"editingShapeId": "shape:25qyqNvsi65qTIfMlGxg9",
+			"croppingShapeId": null,
+			"selectedShapeIds": [
+				"shape:25qyqNvsi65qTIfMlGxg9"
+			],
+			"hoveredShapeId": "shape:25qyqNvsi65qTIfMlGxg9",
+			"erasingShapeIds": [],
+			"hintingShapeIds": [],
+			"focusedGroupId": null,
+			"meta": {},
+			"id": "instance_page_state:page:page",
+			"pageId": "page:page",
+			"typeName": "instance_page_state"
+		},
+		{
+			"x": -49.15319137395318,
+			"y": -398.39911006261,
+			"z": 1,
+			"meta": {},
+			"id": "camera:page:page",
+			"typeName": "camera"
+		},
+		{
+			"x": 119.22082797100387,
+			"y": 706.7447188199828,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:QBuuGjCSOwl-MJHrv9RS7",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 145,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Reference:"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a315R",
+			"typeName": "shape"
+		},
+		{
+			"x": 271.53932256049256,
+			"y": 706.4998787398557,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:25qyqNvsi65qTIfMlGxg9",
+			"type": "text",
+			"props": {
+				"color": "light-blue",
+				"size": "m",
+				"w": 1181.800048828125,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "is just an alias for a variable it allow access and modify that variable,"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "once it is initialized to a variable it cannot change to another, it can't be NULL"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a41xh",
+			"typeName": "shape"
+		}
+	]
+}
