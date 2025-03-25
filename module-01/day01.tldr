@@ -762,85 +762,6 @@
 			"typeName": "shape"
 		},
 		{
-			"id": "pointer:pointer",
-			"typeName": "pointer",
-			"x": 1238.7657402020782,
-			"y": 754.2178661661256,
-			"lastActivityTimestamp": 1742121253260,
-			"meta": {}
-		},
-		{
-			"followingUserId": null,
-			"opacityForNextShape": 1,
-			"stylesForNextShape": {
-				"tldraw:font": "mono",
-				"tldraw:color": "light-blue"
-			},
-			"brush": null,
-			"scribbles": [],
-			"cursor": {
-				"type": "default",
-				"rotation": 0
-			},
-			"isFocusMode": false,
-			"exportBackground": true,
-			"isDebugMode": false,
-			"isToolLocked": false,
-			"screenBounds": {
-				"x": 0,
-				"y": 0,
-				"w": 1420.800048828125,
-				"h": 768
-			},
-			"insets": [
-				false,
-				false,
-				true,
-				false
-			],
-			"zoomBrush": null,
-			"isGridMode": false,
-			"isPenMode": false,
-			"chatMessage": "",
-			"isChatting": false,
-			"highlightedUserIds": [],
-			"isFocused": true,
-			"devicePixelRatio": 0.8333333134651184,
-			"isCoarsePointer": false,
-			"isHoveringCanvas": true,
-			"openMenus": [],
-			"isChangingStyle": false,
-			"isReadonly": false,
-			"meta": {},
-			"duplicateProps": null,
-			"id": "instance:instance",
-			"currentPageId": "page:page",
-			"typeName": "instance"
-		},
-		{
-			"editingShapeId": "shape:25qyqNvsi65qTIfMlGxg9",
-			"croppingShapeId": null,
-			"selectedShapeIds": [
-				"shape:25qyqNvsi65qTIfMlGxg9"
-			],
-			"hoveredShapeId": "shape:25qyqNvsi65qTIfMlGxg9",
-			"erasingShapeIds": [],
-			"hintingShapeIds": [],
-			"focusedGroupId": null,
-			"meta": {},
-			"id": "instance_page_state:page:page",
-			"pageId": "page:page",
-			"typeName": "instance_page_state"
-		},
-		{
-			"x": -49.15319137395318,
-			"y": -398.39911006261,
-			"z": 1,
-			"meta": {},
-			"id": "camera:page:page",
-			"typeName": "camera"
-		},
-		{
 			"x": 119.22082797100387,
 			"y": 706.7447188199828,
 			"rotation": 0,
@@ -934,6 +855,1159 @@
 			},
 			"parentId": "page:page",
 			"index": "a41xh",
+			"typeName": "shape"
+		},
+		{
+			"x": 121.8367404603949,
+			"y": 799.0095045860492,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:cUJrBDozd9LOcR31fgjO7",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 404.203125,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Animal cat(\"lily\");"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Animal cat = Animal(\"lily\");"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a5Ax0",
+			"typeName": "shape"
+		},
+		{
+			"x": 529.919088805415,
+			"y": 829.0924982140474,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:YW4yfaqYH0mH_eJwcrfoP",
+			"type": "text",
+			"props": {
+				"color": "light-blue",
+				"size": "m",
+				"w": 1066.609375,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "it creates a temproray object then copies it to the object created earlier"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a66fX",
+			"typeName": "shape"
+		},
+		{
+			"x": 405.663245559335,
+			"y": 797.7015483413536,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:NX9sd9YQDXHd0r-2Wi_aK",
+			"type": "text",
+			"props": {
+				"color": "light-blue",
+				"size": "m",
+				"w": 404.203125,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "direct creation of an object"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a7ATC",
+			"typeName": "shape"
+		},
+		{
+			"x": 119.22082797100376,
+			"y": 891.8743979594351,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:sSfImNnPd_3BZgkbvxslL",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 607.34375,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "does the compliler build implicit default constructor "
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "after creating any other constructor ?"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a81hR",
+			"typeName": "shape"
+		},
+		{
+			"x": 219.93345881256334,
+			"y": 955.9642539495187,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:TOvJrKr74JzWfcuCslzE6",
+			"type": "text",
+			"props": {
+				"color": "light-green",
+				"size": "m",
+				"w": 741.796875,
+				"font": "sans",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "No once you create a constructor (copy, param..) the compiler stops"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "generating a default constructor "
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a91RI",
+			"typeName": "shape"
+		},
+		{
+			"x": 108.12266895252847,
+			"y": 1049.8976278066602,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:btw1FMcPD-82mrbIt0KCL",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 217,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "string.c_str():"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aA31M",
+			"typeName": "shape"
+		},
+		{
+			"x": 330.22120407394704,
+			"y": 1052.8128401923743,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:a0RnNd7BEcdGQcrV2AZIM",
+			"type": "text",
+			"props": {
+				"color": "light-blue",
+				"size": "m",
+				"w": 951.40625,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "it convets the std::string to C-Style string which is const char *"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aB3fD",
+			"typeName": "shape"
+		},
+		{
+			"x": 108.66506275967123,
+			"y": 1095.0834197852294,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:gGP3YylYOpZ8TDpmadVu0",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 274.609375,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "ifstream.is_open():"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aC3Fr",
+			"typeName": "shape"
+		},
+		{
+			"x": 389.98305798108737,
+			"y": 1095.0834197852294,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:kXBM5Uc7woBUz0_rVnLj4",
+			"type": "text",
+			"props": {
+				"color": "light-blue",
+				"size": "m",
+				"w": 1253.796875,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "lets you verify that the file was opened successfully before attempting operations like"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": " reading, avoiding undefined behavior or errors."
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aD8Ft",
+			"typeName": "shape"
+		},
+		{
+			"x": 106.74985037395737,
+			"y": 1261.2505257709365,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:d98FEpcqC4lelw-v_gUY5",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 413.109375,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "when the ifstream file gets opened ?"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aE4Y9",
+			"typeName": "shape"
+		},
+		{
+			"x": 535.7436772667952,
+			"y": 1258.3353133852222,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:GPBXVFFVC7gJQtvkRekPO",
+			"type": "text",
+			"props": {
+				"color": "light-green",
+				"size": "m",
+				"w": 654.4375,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "it opens at the moment ifstream file object is constructed"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aF2fh",
+			"typeName": "shape"
+		},
+		{
+			"x": 107.20745656681439,
+			"y": 1166.5061232352261,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:fc-YmgmsBCsxPIC6TOc0a",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 202.609375,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "string.find():"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aG0et",
+			"typeName": "shape"
+		},
+		{
+			"x": 317.1027483382335,
+			"y": 1167.9637294280833,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:DcoI_kmssfQZ-9072nZbW",
+			"type": "text",
+			"props": {
+				"color": "light-blue",
+				"size": "m",
+				"w": 922.609375,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "searches for a substring (or character) within a std::string and"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "returns the position (index) of its first occurrenc"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aH0d2",
+			"typeName": "shape"
+		},
+		{
+			"id": "pointer:pointer",
+			"typeName": "pointer",
+			"x": 712.646648490856,
+			"y": 1728.013925071015,
+			"lastActivityTimestamp": 1742840881061,
+			"meta": {}
+		},
+		{
+			"followingUserId": null,
+			"opacityForNextShape": 1,
+			"stylesForNextShape": {
+				"tldraw:font": "serif",
+				"tldraw:color": "black"
+			},
+			"brush": null,
+			"scribbles": [],
+			"cursor": {
+				"type": "default",
+				"rotation": 0
+			},
+			"isFocusMode": false,
+			"exportBackground": true,
+			"isDebugMode": false,
+			"isToolLocked": false,
+			"screenBounds": {
+				"x": 0,
+				"y": 0,
+				"w": 1148,
+				"h": 627
+			},
+			"insets": [
+				false,
+				false,
+				true,
+				false
+			],
+			"zoomBrush": null,
+			"isGridMode": false,
+			"isPenMode": false,
+			"chatMessage": "",
+			"isChatting": false,
+			"highlightedUserIds": [],
+			"isFocused": true,
+			"devicePixelRatio": 1,
+			"isCoarsePointer": false,
+			"isHoveringCanvas": true,
+			"openMenus": [],
+			"isChangingStyle": false,
+			"isReadonly": false,
+			"meta": {},
+			"duplicateProps": null,
+			"id": "instance:instance",
+			"currentPageId": "page:page",
+			"typeName": "instance"
+		},
+		{
+			"editingShapeId": "shape:0_0Omkq6xi_Lww1qLZ3y7",
+			"croppingShapeId": null,
+			"selectedShapeIds": [
+				"shape:0_0Omkq6xi_Lww1qLZ3y7"
+			],
+			"hoveredShapeId": "shape:7mw3yRMWgiNjXtSWKq3Yp",
+			"erasingShapeIds": [],
+			"hintingShapeIds": [],
+			"focusedGroupId": null,
+			"meta": {},
+			"id": "instance_page_state:page:page",
+			"pageId": "page:page",
+			"typeName": "instance_page_state"
+		},
+		{
+			"x": 61.35335150914398,
+			"y": -1404.013925071015,
+			"z": 1,
+			"meta": {},
+			"id": "camera:page:page",
+			"typeName": "camera"
+		},
+		{
+			"x": 157.64664849085602,
+			"y": 1300.818612571015,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:0teAPRf8kcZW2ZMt4g-kd",
+			"type": "text",
+			"props": {
+				"color": "violet",
+				"size": "m",
+				"w": 278.921875,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "string.substr(index. len)"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aIBSK",
+			"typeName": "shape"
+		},
+		{
+			"x": 159.64664849085602,
+			"y": 1337.013925071015,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:41sC5TlvLdh80oqcuBV8J",
+			"type": "text",
+			"props": {
+				"color": "violet",
+				"size": "m",
+				"w": 607.125,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "string.erase(index, len(how many character to erase)"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aJ8Ht",
+			"typeName": "shape"
+		},
+		{
+			"x": 156.64664849085602,
+			"y": 1376.013925071015,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:r5LIMQe5gGhqxLyEezJ1y",
+			"type": "text",
+			"props": {
+				"color": "violet",
+				"size": "m",
+				"w": 348.40625,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "string.insert(index, substring)"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aK1j1",
+			"typeName": "shape"
+		},
+		{
+			"x": 82.64664849085602,
+			"y": 1453.013925071015,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:c1rSqGMmreosRmt8A3aLm",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 924.890625,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "declare a function pointer that points to function that returns nothing but prints."
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aL7DF",
+			"typeName": "shape"
+		},
+		{
+			"x": 160.64664849085602,
+			"y": 1482.013925071015,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:r0oTHdwjuJc4WU-HwAu7C",
+			"type": "text",
+			"props": {
+				"color": "light-green",
+				"size": "m",
+				"w": 701.28125,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "void   (*funcPtr)();        funcPtr = function_name;        funcPtr();"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aM6Sj",
+			"typeName": "shape"
+		},
+		{
+			"x": 75.64664849085602,
+			"y": 1544.123300071015,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:ruUyqZVXht4dYKlbWAcH-",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 890,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "declare a function pointer that points to function that returns int and  prints."
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aN3du",
+			"typeName": "shape"
+		},
+		{
+			"x": 163.64664849085602,
+			"y": 1571.013925071015,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:CbjWkMCbFCd2vADACpUiM",
+			"type": "text",
+			"props": {
+				"color": "light-green",
+				"size": "m",
+				"w": 695.15625,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "int   (*funcPtr)();          funcPtr = function_name;        funcPtr();"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aO0Pk",
+			"typeName": "shape"
+		},
+		{
+			"x": 75.64664849085602,
+			"y": 1544.123300071015,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:-LW9EZpA0khxQJb77FuRs",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 890,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "declare a function pointer that points to function that returns int and  prints."
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aQ5Bt",
+			"typeName": "shape"
+		},
+		{
+			"x": 74.64664849085602,
+			"y": 1626.013925071015,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:kGqSZLUvjgP92fpfmi0D5",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 1040.75,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "declare a function pointer that points to function that take int as parameter and returns int"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aR0mp",
+			"typeName": "shape"
+		},
+		{
+			"x": 163.64664849085602,
+			"y": 1654.013925071015,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:q9vmFVmHlEL9Ml_44xIBi",
+			"type": "text",
+			"props": {
+				"color": "light-green",
+				"size": "m",
+				"w": 719.25,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "int (*funcPtr)(int );          funcPtr = function_name;     funcPtr(5);"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aSC6Z",
+			"typeName": "shape"
+		},
+		{
+			"x": 68.64664849085602,
+			"y": 1722.013925071015,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:7mw3yRMWgiNjXtSWKq3Yp",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 855.234375,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "declare an array of function pointers that take nothing and return nothing."
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aTBF4",
+			"typeName": "shape"
+		},
+		{
+			"x": 159.64664849085602,
+			"y": 1752.013925071015,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:7N_p16TCt3QuhkQEpZuAI",
+			"type": "text",
+			"props": {
+				"color": "light-green",
+				"size": "m",
+				"w": 605.296875,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "int (*arrPtr[3])() = { fun1, func2, func3};      arrPtr[2]();"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aUBrp",
+			"typeName": "shape"
+		},
+		{
+			"x": 79.64664849085602,
+			"y": 1883.013925071015,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:0_0Omkq6xi_Lww1qLZ3y7",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 780.375,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "declare a function pointer that points to member function in a class."
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aV6SE",
 			"typeName": "shape"
 		}
 	]

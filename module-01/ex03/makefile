@@ -1,7 +1,7 @@
-NAME = megaphone
+NAME = weapon
 CXX = c++ 
-CXXFLAGS = -std=c++98 -Wall -Werror -Wextra
-SRCS = megaphone.cpp
+CXXFLAGS = -std=c++98 -Wall -Werror -Wextra -g
+SRCS = main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 $(NAME): $(OBJS)
