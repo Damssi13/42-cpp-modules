@@ -4,6 +4,8 @@ HumanA::HumanA(std::string newName, Weapon &newWeapon) : name(newName), weapon(n
 
 void    HumanA::attack()
 {
+    if(name.empty())
+        name = "Unknown";
     std::cout << name
               << " attacks with their "
               << weapon.getType() << std::endl;

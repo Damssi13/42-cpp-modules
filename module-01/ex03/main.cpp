@@ -5,8 +5,8 @@
 int main()
 {
     {
-        Weapon club("Knife");
-        HumanA bob("",club);
+        Weapon club("Frdi");
+        HumanA bob("Bob",club);
         bob.attack();
         club.setType("sila7 abyad");
         bob.attack();

@@ -4,13 +4,13 @@ int main()
 {
     Zombie *lfrg;
 
-    lfrg = zombieHorde(20, "carlos");
+    lfrg = zombieHorde(3, "rachidos");
     if(lfrg == NULL)
     {
         std::cout << "Found an error\n";
         return 0;
     }
-    for(int i = 0; i < 20 ; i++)
+    for(int i = 0; i < 3 ; i++)
     {
         lfrg[i].announce();
     }

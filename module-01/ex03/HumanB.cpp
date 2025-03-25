@@ -4,6 +4,8 @@ HumanB::HumanB(std::string newName)
 {
     name = newName;
     weapon = NULL;
+    if(newName.empty())
+        name = "Unknown";
 }
 
 void    HumanB::attack()

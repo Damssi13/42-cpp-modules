@@ -3,9 +3,9 @@
 
 Zombie *zombieHorde(int N, std::string name)
 {
-    if(N <= 0)
+    if(N <= 0 || name.empty())
     {
-        std::cerr << "The number of zombies is not Valid!\n";
+        std::cerr << "Parameter Entered Are Unvalid!\n";
         return NULL;
     }
     Zombie *horde = new Zombie[N];

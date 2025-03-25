@@ -5,10 +5,9 @@ int main()
 {
     Harl harl;
 
-
-    harl.complain(NULL);
-    harl.complain("WARNING");
-    harl.complain("INFO");
-    harl.complain("SOMETHING");
     harl.complain("DEBUG");
+    harl.complain("INFO");
+    harl.complain("ERROR");
+    harl.complain("WARNING");
+    harl.complain("SOMETHING");
 }
