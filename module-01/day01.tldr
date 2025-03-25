@@ -1427,9 +1427,9 @@
 		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": 712.646648490856,
-			"y": 1728.013925071015,
-			"lastActivityTimestamp": 1742840881061,
+			"x": 220.64664849085602,
+			"y": 2016.013925071015,
+			"lastActivityTimestamp": 1742891638934,
 			"meta": {}
 		},
 		{
@@ -1437,12 +1437,12 @@
 			"opacityForNextShape": 1,
 			"stylesForNextShape": {
 				"tldraw:font": "serif",
-				"tldraw:color": "black"
+				"tldraw:color": "light-blue"
 			},
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
-				"type": "default",
+				"type": "move",
 				"rotation": 0
 			},
 			"isFocusMode": false,
@@ -1481,12 +1481,12 @@
 			"typeName": "instance"
 		},
 		{
-			"editingShapeId": "shape:0_0Omkq6xi_Lww1qLZ3y7",
+			"editingShapeId": null,
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:0_0Omkq6xi_Lww1qLZ3y7"
+				"shape:C3NERADR76XQYHnVvZF7d"
 			],
-			"hoveredShapeId": "shape:7mw3yRMWgiNjXtSWKq3Yp",
+			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -1497,7 +1497,7 @@
 		},
 		{
 			"x": 61.35335150914398,
-			"y": -1404.013925071015,
+			"y": -1571.013925071015,
 			"z": 1,
 			"meta": {},
 			"id": "camera:page:page",
@@ -1972,8 +1972,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 79.64664849085602,
-			"y": 1883.013925071015,
+			"x": 70.64664849085602,
+			"y": 1814.013925071015,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -2008,6 +2008,201 @@
 			},
 			"parentId": "page:page",
 			"index": "aV6SE",
+			"typeName": "shape"
+		},
+		{
+			"x": 137.64664849085602,
+			"y": 1846.013925071015,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:wjyb4sK_UZk2u9m0tLvmM",
+			"type": "text",
+			"props": {
+				"color": "light-green",
+				"size": "m",
+				"w": 870.3125,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "int (Class_name::*funcPtr)();        funcPtr = &Class_name::member_function;"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aWB7D",
+			"typeName": "shape"
+		},
+		{
+			"x": 70.64664849085602,
+			"y": 1903.013925071015,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:_HsUFM_bwo-mF5bkV3iTh",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 636.015625,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "declare an array of member function pointers in a class"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aX44Z",
+			"typeName": "shape"
+		},
+		{
+			"x": 135.64664849085602,
+			"y": 1935.013925071015,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:6MGtIXigHeoix3C1RMuOm",
+			"type": "text",
+			"props": {
+				"color": "light-green",
+				"size": "m",
+				"w": 372.53125,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "int (Class_name::*arrPtr[size])();"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aY4vH",
+			"typeName": "shape"
+		},
+		{
+			"x": 69.64664849085602,
+			"y": 2010.013925071015,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:d4lCvOA3QuD4aGozgRjCN",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 51.59375,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "this:"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aZBBv",
+			"typeName": "shape"
+		},
+		{
+			"x": 130.64664849085602,
+			"y": 2010.013925071015,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:C3NERADR76XQYHnVvZF7d",
+			"type": "text",
+			"props": {
+				"color": "light-blue",
+				"size": "m",
+				"w": 447.765625,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "a pointer to the current object instance"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aaAFJ",
 			"typeName": "shape"
 		}
 	]
