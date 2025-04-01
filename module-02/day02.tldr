@@ -36,9 +36,9 @@
 		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": 403.6090617064723,
-			"y": 528,
-			"lastActivityTimestamp": 1742999157411,
+			"x": 369.80453085323614,
+			"y": 534.60546875,
+			"lastActivityTimestamp": 1743415933234,
 			"meta": {}
 		},
 		{
@@ -836,20 +836,20 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -10.60906170647228,
-			"y": -120,
+			"x": -84.80453085323614,
+			"y": -299.60546875,
 			"z": 1,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
 		},
 		{
-			"editingShapeId": "shape:4_VTLnqEwCB8Elswxavrn",
+			"editingShapeId": "shape:n-JHbM70n0GyObI--Qt8I",
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:4_VTLnqEwCB8Elswxavrn"
+				"shape:n-JHbM70n0GyObI--Qt8I"
 			],
-			"hoveredShapeId": null,
+			"hoveredShapeId": "shape:n-JHbM70n0GyObI--Qt8I",
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -898,6 +898,162 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 170.80453085323614,
+			"y": 625.60546875,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:OaZd0TLWXzuX4k2bTLOak",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 105.59375,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "decimal :"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a60yA",
+			"typeName": "shape"
+		},
+		{
+			"x": 283.80453085323614,
+			"y": 584.60546875,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:vrjFbSh1m7_XnpKSg22kq",
+			"type": "text",
+			"props": {
+				"color": "light-blue",
+				"size": "m",
+				"w": 525.28125,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "A3dad sa7i7a no points there can be negative."
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a55OS",
+			"typeName": "shape"
+		},
+		{
+			"x": 284.80453085323614,
+			"y": 626.60546875,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:vm_10a4Kjlbhgac9Vrt02",
+			"type": "text",
+			"props": {
+				"color": "light-blue",
+				"size": "m",
+				"w": 707.6875,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "A3dad 3acharia has \" . \" can be represent fractions in 10 base."
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a737O",
+			"typeName": "shape"
+		},
+		{
+			"x": 168.80453085323614,
+			"y": 582.60546875,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:JwobHqajWEhLPBAGJS36y",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 108.03125,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "integers :"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a40Dr",
+			"typeName": "shape"
+		},
+		{
 			"meta": {},
 			"id": "page:page",
 			"name": "Page 1",
@@ -915,8 +1071,8 @@
 			"followingUserId": null,
 			"opacityForNextShape": 1,
 			"stylesForNextShape": {
-				"tldraw:color": "black",
-				"tldraw:font": "sans"
+				"tldraw:font": "serif",
+				"tldraw:color": "black"
 			},
 			"brush": null,
 			"scribbles": [],
@@ -931,8 +1087,8 @@
 			"screenBounds": {
 				"x": 0,
 				"y": 0,
-				"w": 930,
-				"h": 934
+				"w": 1148,
+				"h": 627
 			},
 			"insets": [
 				false,
@@ -958,6 +1114,69 @@
 			"id": "instance:instance",
 			"currentPageId": "page:page",
 			"typeName": "instance"
+		},
+		{
+			"x": 131.8045308532361,
+			"y": 472.60546875,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:n-JHbM70n0GyObI--Qt8I",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 927.8125,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "This day talks about fixed-points and floating-points which are decimal numbers"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "the key difference bettween fixed and float is how the system stores these"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "values in the memory "
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a8ArF",
+			"typeName": "shape"
 		}
 	]
 }
