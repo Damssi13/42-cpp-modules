@@ -36,9 +36,9 @@
 		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": 369.80453085323614,
-			"y": 534.60546875,
-			"lastActivityTimestamp": 1743415933234,
+			"x": 1291.0353484769903,
+			"y": 311.22499853622816,
+			"lastActivityTimestamp": 1743643596418,
 			"meta": {}
 		},
 		{
@@ -836,20 +836,110 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -84.80453085323614,
-			"y": -299.60546875,
-			"z": 1,
+			"x": 168.73034597764683,
+			"y": 824.2801131930415,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:UDShIALzON2adUPxobM0E",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 398.7812805175781,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "What is a static member function ?"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aB0Ph",
+			"typeName": "shape"
+		},
+		{
+			"x": 450.2405949003571,
+			"y": -181.57310245155622,
+			"z": 0.6804277659185707,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
 		},
 		{
-			"editingShapeId": "shape:n-JHbM70n0GyObI--Qt8I",
+			"x": 223.28375768271587,
+			"y": 857.9622348890019,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:dLtK3YGnMNiL7VfK9bHVM",
+			"type": "text",
+			"props": {
+				"color": "light-green",
+				"size": "m",
+				"w": 495.04376220703125,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "it is related to the class itself not the object;"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "it can only access static members"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aC0fr",
+			"typeName": "shape"
+		},
+		{
+			"editingShapeId": "shape:EW1gZDPqBr9tuUzvtWUQn",
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:n-JHbM70n0GyObI--Qt8I"
+				"shape:EW1gZDPqBr9tuUzvtWUQn"
 			],
-			"hoveredShapeId": "shape:n-JHbM70n0GyObI--Qt8I",
+			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -857,6 +947,45 @@
 			"id": "instance_page_state:page:page",
 			"pageId": "page:page",
 			"typeName": "instance_page_state"
+		},
+		{
+			"x": 226.98087926127948,
+			"y": 972.1847777210503,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:yrNUO4NUafJVIMVermUXs",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 493.5812683105469,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Why does the operator returns a reference "
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aD1Id",
+			"typeName": "shape"
 		},
 		{
 			"x": 128,
@@ -976,6 +1105,45 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 169.42103373716486,
+			"y": 735.3215175914765,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:oGGheyeM_iKO9fceRY0Bz",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 533.2750244140625,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "why you made the overloaded operator const? "
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a92iB",
+			"typeName": "shape"
+		},
+		{
 			"x": 284.80453085323614,
 			"y": 626.60546875,
 			"rotation": 0,
@@ -1071,8 +1239,8 @@
 			"followingUserId": null,
 			"opacityForNextShape": 1,
 			"stylesForNextShape": {
-				"tldraw:font": "serif",
-				"tldraw:color": "black"
+				"tldraw:color": "black",
+				"tldraw:font": "serif"
 			},
 			"brush": null,
 			"scribbles": [],
@@ -1087,8 +1255,8 @@
 			"screenBounds": {
 				"x": 0,
 				"y": 0,
-				"w": 1148,
-				"h": 627
+				"w": 1420.800048828125,
+				"h": 768
 			},
 			"insets": [
 				false,
@@ -1103,7 +1271,7 @@
 			"isChatting": false,
 			"highlightedUserIds": [],
 			"isFocused": true,
-			"devicePixelRatio": 1,
+			"devicePixelRatio": 0.8333333134651184,
 			"isCoarsePointer": false,
 			"isHoveringCanvas": true,
 			"openMenus": [],
@@ -1114,6 +1282,45 @@
 			"id": "instance:instance",
 			"currentPageId": "page:page",
 			"typeName": "instance"
+		},
+		{
+			"x": 222.59599101255543,
+			"y": 765.2840114879609,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:0umM3N1--HisIztVqne-m",
+			"type": "text",
+			"props": {
+				"color": "light-green",
+				"size": "m",
+				"w": 720.71875,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "because they can't operate on const objects if \"const\" is not set."
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aACDU",
+			"typeName": "shape"
 		},
 		{
 			"x": 131.8045308532361,
@@ -1176,6 +1383,45 @@
 			},
 			"parentId": "page:page",
 			"index": "a8ArF",
+			"typeName": "shape"
+		},
+		{
+			"x": 299.894146315654,
+			"y": 1066.0443377025817,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:EW1gZDPqBr9tuUzvtWUQn",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 558.25,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "What is a fixed point to integere or int vs fixed P?"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aE0b0",
 			"typeName": "shape"
 		}
 	]

@@ -56,7 +56,6 @@ int     Fixed::toInt() const
     return value >> fractionalBits;
 }
 
-
 Fixed::~Fixed()
 {
     std::cout << "Destructor Called!\n";
