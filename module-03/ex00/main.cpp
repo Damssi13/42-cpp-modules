@@ -4,5 +4,5 @@ int main()
 {
     ClapTrap luffy;
 
-    luffy.attack("katakuri");
+    luffy.attack("k");
 }
