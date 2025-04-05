@@ -36,7 +36,7 @@ void    ClapTrap::attack(const std::string &target)
 {
     if(energyPoint == 0 || hitPoint == 0)
     {
-        std::cout << "ClapTrap " << name << "cannot attack beacause No Energy/Hit poits left\n";
+        std::cout << "ClapTrap " << name << " cannot Attack because No Energy/Hit points left\n";
         return ;
     }
     std::cout << "ClapTrap " << name << " attacks " << target << " causing " << attackDamage << " points of damage!\n";
@@ -47,13 +47,16 @@ void    ClapTrap::attack(const std::string &target)
 // negative value = Error // //no energy/hit points = nothing //  all good =  Print message, energy--
 void    ClapTrap::takeDamage(unsigned int amount)
 {
-    if((int)amount < 0)
+    if((int)amount <= 0 || amount > 10)
     {
-        std::cerr << "No negative values allowed\n";
+        std::cerr << "Values not allowed\n";
         return ;
     }
-    if(energyPoint == 0 || hitPoint == 0)
+    else if(hitPoint == 0)
+    {
+        std::cout << "ClapTrap " << name << " cannot take damage, it is already dead\n";
         return ;
+    }
     amount > hitPoint? hitPoint = 0 : hitPoint -= amount;
     std::cout << "ClapTrap " << name << " took " << amount << " points of damage!\n";
 }
@@ -61,15 +64,17 @@ void    ClapTrap::takeDamage(unsigned int amount)
 // negative value = Error // //no energy/hit points = nothing //  all good =  Print message, add the HP, energy--
 void    ClapTrap::beRepaired(unsigned int amount)
 {
-    if((int)amount < 0)
+    if((int)amount <= 0 || amount > 10 )
     {
-        std::cerr << "No Negative values allowed\n";
+        std::cerr << "Values not allowed\n";
         return ;
     }
-
-    if(energyPoint == 0 || hitPoint == 0)
+    else if(energyPoint == 0 || hitPoint == 0)
+    {
+        std::cout << "ClapTrap " << name << " cannot Repair because No Energy/Hit points left\n";
         return ;
-    std::cout << "ClapTrap " << name << " repaired " << amount << "points of damage!\n";
+    }
+    std::cout << "ClapTrap " << name << " repaired " << amount << " points of damage!\n";
     hitPoint += amount;
     energyPoint--;
 }
