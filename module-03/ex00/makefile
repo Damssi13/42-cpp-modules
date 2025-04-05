@@ -1,7 +1,7 @@
 NAME = ClapTrap
 CXX = c++
 CXXFLAGS = -std=c++98 -Wall -Wextra -Werror
-SRCS = main.cpp ClapTrap.cpp C
+SRCS = main.cpp ClapTrap.cpp 
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)

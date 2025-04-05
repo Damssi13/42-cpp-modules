@@ -18,9 +18,9 @@ public:
     ~ClapTrap();
 
 
-    void    ClapTrap::attack(const std::string &target);
-    void    ClapTrap::beRepaired(unsigned amount);
-    void    ClapTrap::takeDamage(unsigned amount);
+    void    attack(const std::string &target);
+    void    beRepaired(unsigned amount);
+    void    takeDamage(unsigned amount);
 
 };
 
