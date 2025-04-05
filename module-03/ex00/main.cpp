@@ -2,7 +2,12 @@
 
 int main()
 {
-    ClapTrap luffy;
+    ClapTrap obj("Naruto");
 
-    luffy.attack("k");
+    obj.printInfo();
+    obj.takeDamage(3);
+    obj.takeDamage(3);
+    obj.takeDamage(-5);
+    obj.printInfo();
+
 }
