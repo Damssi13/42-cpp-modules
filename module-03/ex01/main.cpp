@@ -3,15 +3,15 @@
 
 int main()
 {
-    ScavTrap scav("Rachid");
-    ClapTrap clap("Anas");
-
-    clap.printInfo();
-    scav.printInfo();
-    clap.guardGate()
-    // scav.printInfo();
-    // scav.printad();
-    std::cout << "_______________________________\n";
-
-
+    ClapTrap clap("Rachid");
+    ScavTrap scav("Ayoub");
+    
+    clap.attack("Enemy");
+    clap.takeDamage(5);
+    clap.beRepaired(4);
+    
+    scav.attack("Enemy");
+    scav.takeDamage(5);
+    scav.beRepaired(4);
+    
 }
