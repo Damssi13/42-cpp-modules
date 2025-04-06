@@ -3,8 +3,8 @@
 FragTrap::FragTrap() : ClapTrap()
 {
     this->hitPoint = 100;
-    this->energyPoint = 50;
-    this->attackDamage = 20;
+    this->energyPoint = 100;
+    this->attackDamage = 30;
     std::cout << "FragTrap Default constructor called!\n";
 }
 
@@ -12,8 +12,8 @@ FragTrap::FragTrap() : ClapTrap()
 FragTrap::FragTrap(const std::string &Newname) : ClapTrap(Newname)
 {
     this->hitPoint = 100;
-    this->energyPoint = 50;
-    this->attackDamage = 20;
+    this->energyPoint = 100;
+    this->attackDamage = 30;
     std::cout << Newname <<" FragTrap Parameterized constructor called!\n";
 }
 

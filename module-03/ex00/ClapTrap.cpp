@@ -23,15 +23,14 @@ ClapTrap    &ClapTrap::operator=(const ClapTrap &other)
     std::cout << "Copy assignment called\n";
     if(this != &other)
     {
-        this->name = name;
-        this->hitPoint = hitPoint;
-        this->energyPoint = energyPoint;
-        this->attackDamage = attackDamage;
+        this->name = other.name;
+        this->hitPoint = other.hitPoint;
+        this->energyPoint = other.energyPoint;
+        this->attackDamage = other.attackDamage;
     }
     return *this;
 }
 
- //no energy/hit points = nothing //  all good =  Print message, energy--
 void    ClapTrap::attack(const std::string &target)
 {
     if(energyPoint == 0 || hitPoint == 0)
@@ -44,10 +43,9 @@ void    ClapTrap::attack(const std::string &target)
 }
 
 
-// negative value = Error // //no energy/hit points = nothing //  all good =  Print message, energy--
 void    ClapTrap::takeDamage(unsigned int amount)
 {
-    if((int)amount <= 0 || amount > 10)
+    if((int)amount <= 0 || amount > 100)
     {
         std::cerr << "Values not allowed\n";
         return ;
@@ -61,7 +59,6 @@ void    ClapTrap::takeDamage(unsigned int amount)
     std::cout << "ClapTrap " << name << " took " << amount << " points of damage!\n";
 }
 
-// negative value = Error // //no energy/hit points = nothing //  all good =  Print message, add the HP, energy--
 void    ClapTrap::beRepaired(unsigned int amount)
 {
     if((int)amount <= 0 || amount > 10 )
