@@ -5,17 +5,14 @@
 
 int main()
 {
-    ScavTrap scav1;
-    ScavTrap scav("Rachid");
-    std::cout << "_______________________________\n";
-    ClapTrap clap("Anas");
-    std::cout << "_______________________________\n";
-    FragTrap frag("Hamza");
-    std::cout << "_______________________________\n";
-    frag.attack("Jifra");
-
-    // scav.printInfo();
-    // scav.printad();
-    scav.guardGate();
-
+    ClapTrap clap;
+    clap = ClapTrap("newjersy");
+    // std::cout << std::endl;
+    // clap = FragTrap("Jiri");
+    // std::cout << std::endl;
+    // ScavTrap scav;
+    // std::cout << std::endl;
+    // FragTrap frag;
+    // std::cout << std::endl;
+    clap.attack("nani");
 }

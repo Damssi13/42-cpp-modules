@@ -20,14 +20,15 @@ ClapTrap::ClapTrap(const ClapTrap &other)
 
 ClapTrap    &ClapTrap::operator=(const ClapTrap &other)
 {
-    std::cout << "ClapTrap Copy assignment called\n";
     if(this != &other)
     {
-        this->name = name;
-        this->hitPoint = hitPoint;
-        this->energyPoint = energyPoint;
-        this->attackDamage = attackDamage;
+        std::cout << "Inside\n";
+        this->name = other.name;
+        this->hitPoint = other.hitPoint;
+        this->energyPoint = other.energyPoint;
+        this->attackDamage = other.attackDamage;
     }
+    std::cout << "ClapTrap Copy assignment called\n";
     return *this;
 }
 
