@@ -2,7 +2,7 @@
 
 ClapTrap::ClapTrap() : name("Unknown"), hitPoint(10), energyPoint(10), attackDamage(0)
 {
-    std::cout << "Default constructor called!\n";
+    std::cout << "ClapTrap Default constructor called!\n";
 }
 
 //when deleting Const the main can not accept the string reference. WHY

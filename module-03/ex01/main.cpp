@@ -6,14 +6,12 @@ int main()
     ScavTrap scav("Rachid");
     ClapTrap clap("Anas");
 
-
-
     clap.printInfo();
     scav.printInfo();
-    clap.beRepaired(4);
+    clap.guardGate()
     // scav.printInfo();
     // scav.printad();
     std::cout << "_______________________________\n";
-    scav.guardGate();
+
 
 }
