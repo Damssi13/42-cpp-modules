@@ -61,7 +61,7 @@ void    ClapTrap::takeDamage(unsigned int amount)
 
 void    ClapTrap::beRepaired(unsigned int amount)
 {
-    if((int)amount <= 0 || amount > 10 )
+    if((int)amount <= 0 || amount > 100 )
     {
         std::cerr << "Values not allowed\n";
         return ;
@@ -77,10 +77,12 @@ void    ClapTrap::beRepaired(unsigned int amount)
 }
 void    ClapTrap::printInfo()
 {
-    std::cout   << "Name = " << name << std::endl
+    std::cout   << "______________________\n"
+                << "Name = " << name << std::endl
                 << "HP = " << hitPoint << std::endl
                 << "Energy = " << energyPoint << std::endl
-                << "Attak Damage = " << attackDamage << std::endl; 
+                << "Attak Damage = " << attackDamage << std::endl
+                << "______________________\n"; 
 }
 
 ClapTrap::~ClapTrap()

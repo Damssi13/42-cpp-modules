@@ -6,9 +6,9 @@ ClapTrap::ClapTrap() : name("Unknown"), hitPoint(10), energyPoint(10), attackDam
 }
 
 //when deleting Const the main can not accept the string reference. WHY
-ClapTrap::ClapTrap(const std::string &Newname) : hitPoint(10), energyPoint(10), attackDamage(0)
+ClapTrap::ClapTrap(const std::string &newName) : hitPoint(10), energyPoint(10), attackDamage(0)
 {
-    name = Newname;
+    name = newName;
     std::cout << name <<" ClapTrap Parameterized constructor called!\n";
 }
 
@@ -23,10 +23,10 @@ ClapTrap    &ClapTrap::operator=(const ClapTrap &other)
     std::cout << "ClapTrap Copy assignment called\n";
     if(this != &other)
     {
-        this->name = name;
-        this->hitPoint = hitPoint;
-        this->energyPoint = energyPoint;
-        this->attackDamage = attackDamage;
+        this->name = other.name;
+        this->hitPoint = other.hitPoint;
+        this->energyPoint = other.energyPoint;
+        this->attackDamage = other.attackDamage;
     }
     return *this;
 }
@@ -47,7 +47,7 @@ void    ClapTrap::attack(const std::string &target)
 // negative value = Error // //no energy/hit points = nothing //  all good =  Print message, energy--
 void    ClapTrap::takeDamage(unsigned int amount)
 {
-    if((int)amount <= 0 || amount > 10)
+    if((int)amount <= 0 || amount > 100)
     {
         std::cerr << "Values not allowed\n";
         return ;
@@ -64,7 +64,7 @@ void    ClapTrap::takeDamage(unsigned int amount)
 // negative value = Error // //no energy/hit points = nothing //  all good =  Print message, add the HP, energy--
 void    ClapTrap::beRepaired(unsigned int amount)
 {
-    if((int)amount <= 0 || amount > 10 )
+    if((int)amount <= 0 || amount > 100 )
     {
         std::cerr << "Values not allowed\n";
         return ;
@@ -88,6 +88,7 @@ void    ClapTrap::printInfo()
                 << "Attak Damage = " << attackDamage << std::endl
                 << "______________________\n"; 
 }
+
 
 ClapTrap::~ClapTrap()
 {

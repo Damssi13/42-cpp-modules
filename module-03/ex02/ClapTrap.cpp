@@ -2,7 +2,7 @@
 
 ClapTrap::ClapTrap() : name("Unknown"), hitPoint(10), energyPoint(10), attackDamage(0)
 {
-    std::cout << "Clap Default constructor called!\n";
+    std::cout << "ClapTrap Default constructor called!\n";
 }
 
 //when deleting Const the main can not accept the string reference. WHY
@@ -22,7 +22,6 @@ ClapTrap    &ClapTrap::operator=(const ClapTrap &other)
 {
     if(this != &other)
     {
-        std::cout << "Inside\n";
         this->name = other.name;
         this->hitPoint = other.hitPoint;
         this->energyPoint = other.energyPoint;
@@ -48,7 +47,7 @@ void    ClapTrap::attack(const std::string &target)
 // negative value = Error // //no energy/hit points = nothing //  all good =  Print message, energy--
 void    ClapTrap::takeDamage(unsigned int amount)
 {
-    if((int)amount <= 0 || amount > 10)
+    if((int)amount <= 0 || amount > 100)
     {
         std::cerr << "Values not allowed\n";
         return ;
@@ -65,7 +64,7 @@ void    ClapTrap::takeDamage(unsigned int amount)
 // negative value = Error // //no energy/hit points = nothing //  all good =  Print message, add the HP, energy--
 void    ClapTrap::beRepaired(unsigned int amount)
 {
-    if((int)amount <= 0 || amount > 10 )
+    if((int)amount <= 0 || amount > 100)
     {
         std::cerr << "Values not allowed\n";
         return ;

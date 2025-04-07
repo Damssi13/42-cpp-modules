@@ -1,6 +1,6 @@
 #include "ScavTrap.hpp"
 
-ScavTrap::ScavTrap() : ClapTrap()
+ScavTrap::ScavTrap()
 {
     this->hitPoint = 100;
     this->energyPoint = 50;
@@ -9,15 +9,15 @@ ScavTrap::ScavTrap() : ClapTrap()
 }
 
 //when deleting Const the main can not accept the string reference. WHY
-ScavTrap::ScavTrap(const std::string &Newname) : ClapTrap(Newname)
+ScavTrap::ScavTrap(const std::string &newName) : ClapTrap(newName)
 {
     this->hitPoint = 100;
     this->energyPoint = 50;
     this->attackDamage = 20;
-    std::cout << Newname <<" ScavTrap Parameterized constructor called!\n";
+    std::cout << newName <<" ScavTrap Parameterized constructor called!\n";
 }
 
-ScavTrap::ScavTrap(const ScavTrap &other) : ClapTrap()
+ScavTrap::ScavTrap(const ScavTrap &other) : ClapTrap(other)
 {
     std::cout << "ScavTrap Copy constructor called\n";
     *this = other;    

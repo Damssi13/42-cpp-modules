@@ -1,6 +1,6 @@
 #include "FragTrap.hpp"
 
-FragTrap::FragTrap() : ClapTrap()
+FragTrap::FragTrap() 
 {
     this->hitPoint = 100;
     this->energyPoint = 100;
@@ -9,15 +9,15 @@ FragTrap::FragTrap() : ClapTrap()
 }
 
 //when deleting Const the main can not accept the string reference. WHY
-FragTrap::FragTrap(const std::string &Newname) : ClapTrap(Newname)
+FragTrap::FragTrap(const std::string &newName) : ClapTrap(newName)
 {
     this->hitPoint = 100;
     this->energyPoint = 100;
     this->attackDamage = 30;
-    std::cout << Newname <<" FragTrap Parameterized constructor called!\n";
+    std::cout << newName <<" FragTrap Parameterized constructor called!\n";
 }
 
-FragTrap::FragTrap(const FragTrap &other) : ClapTrap()
+FragTrap::FragTrap(const FragTrap &other) : ClapTrap(other)
 {
     std::cout << "FragTrap Copy constructor called\n";
     *this = other;    
@@ -39,7 +39,7 @@ FragTrap    &FragTrap::operator=(const FragTrap &other)
 
 void    FragTrap::highFiveGuys()
 {
-    std::cout << "HIGH FIVE GUUUYS!\n";
+    std::cout << name <<" requests a high five!\n";
 }
 
 FragTrap::~FragTrap()

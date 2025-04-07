@@ -2,34 +2,14 @@
 
 int main()
 {
-    ClapTrap a("luffy");
-    ClapTrap b("Goku");
+    ClapTrap two("Rachid");
+    ClapTrap one("ayoub");
 
+    ClapTrap three;
 
-    b.attack("Friza");
-    b.takeDamage(6);
-    
-    a.attack("Crocodile");
-    a.takeDamage(8);
-    a.beRepaired(3);
-
-    b.beRepaired(2);
-    b.attack("Friza");
-    b.attack("Friza");
-    b.attack("Friza");
-    b.attack("Friza");
-    b.attack("Friza");
-    b.takeDamage(8);
-    b.beRepaired(3);
-    b.beRepaired(3);
-    b.attack("Friza");
-    b.attack("Friza");
-
-
-    b.printInfo();
-
-
+    three = two;
+    three.attack("Enemy");
+    three.takeDamage(145);
+    one.printInfo();
     std::cout << "_______________________________\n";
-
-
 }
