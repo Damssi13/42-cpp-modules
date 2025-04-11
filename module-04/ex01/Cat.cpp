@@ -3,6 +3,7 @@
 Cat::Cat() 
 {
     type = "Cat";
+    brain = new Brain;
     std::cout << "Cat Default Constructor called!\n";
 }
 
@@ -23,10 +24,12 @@ Cat     &Cat::operator=(const Cat &other)
 
 Cat::~Cat()
 {
+    delete brain;
     std::cout << "Cat Destructor called!\n";
 }
 
 void    Cat::makeSound() const
 {
+
     std::cout << "Meow !\n";
 }
