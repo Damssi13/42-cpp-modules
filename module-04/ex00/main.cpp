@@ -28,5 +28,24 @@ int main()
     delete i;
     delete j;
     delete meta;
+    std::cout << "\n===============================\n";
+    std::cout << "\n===============================\n";
+
+    WrongAnimal *wrong = new WrongAnimal();
+    WrongAnimal *wrongCat = new WrongCat();
+    
+    std::cout << std::endl;
+
+    std::cout << wrong->getType() << " " << std::endl;
+    std::cout << wrongCat->getType() << " " << std::endl;
+    std::cout << std::endl;
+
+    wrong->makeSound();
+    wrongCat->makeSound();
+
+    std::cout << std::endl;
+    
+    delete wrong;
+    delete wrongCat;
     return 0;
 }
