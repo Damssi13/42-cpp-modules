@@ -26,10 +26,12 @@ public:
         const char *what() const throw();
     };
     ~Bureaucrat();
-    const std::string   getName() const;
-    int                 getGrade() const;
+    const std::string   getName();
+    int                 getGrade();
     void incrementGrade();
     void decrementGrade();
+    void    signeForm();
+
 };
 
 std::ostream  &operator<<(std::ostream &os, Bureaucrat &bureau);
