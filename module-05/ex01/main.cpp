@@ -1,69 +1,45 @@
 #include "Bureaucrat.hpp"
-
-#include <iostream>
-#include "Bureaucrat.hpp"  // or your actual header
+#include "Form.hpp"
 
 int main() {
-    std::cout << "\n---------------------------------------------------------";
-    std::cout << "\n--- Testing valid creation ---\n";
-    try {
-        Bureaucrat a("Alice", 42);
-        std::cout << a;
-    }
-    catch (std::exception& e) {
-        std::cerr << "Exception: " << e.what() << '\n';
-    }
-    
-    std::cout << "\n---------------------------------------------------------";
-    std::cout << "\n--- Testing invalid high grade (grade = 0) ---\n";
-    try {
-        Bureaucrat b("Bob", 0);  // should throw GradeTooHighException
-    }
-    catch (std::exception& e) {
-        std::cerr << "Exception: " << e.what() << '\n';
-    }
-    
-    std::cout << "\n---------------------------------------------------------";
-    std::cout << "\n--- Testing invalid low grade (grade = 200) ---\n";
-    try {
-        Bureaucrat c("Charlie", 200);  // should throw GradeTooLowException
-    }
-    catch (std::exception& e) {
-        std::cerr << "Exception: " << e.what() << '\n';
-    }
-    
-    std::cout << "\n---------------------------------------------------------";
-    std::cout << "\n--- Testing increment and decrement ---\n";
-    try {
-        Bureaucrat d("David", 2);
-        std::cout << d;
 
-        d.incrementGrade();  // 2 → 1 (ok)
-        std::cout << "After increment: grade " << d.getGrade() << "\n";
-
-        d.incrementGrade();  // 1 → 0 (should throw)
-        std::cout << "After second increment: grade " << d.getGrade() << "\n";
-    }
-    catch (std::exception& e) {
-        std::cerr << "Exception during increment: " << e.what() << '\n';
-    }
-    
-    std::cout << "\n---------------------------------------------------------";
-    std::cout << "\n--- Testing decrement at low boundary ---\n";
     try {
-        Bureaucrat e("Emma", 149);
-        std::cout << e;
-
-        e.decrementGrade();  // 149 → 150 (ok)
-        std::cout << "After decrement: grade " << e.getGrade() << "\n";
-
-        e.decrementGrade();  // 150 → 151 (should throw)
-        std::cout << "After second decrement: grade " << e.getGrade() << "\n";
+        Bureaucrat bob("Bob", 2);
+        Bureaucrat alice("Alice", 40);
+        
+        Form taxForm("TaxForm", 1, 5);
+        Form leaveForm("LeaveForm", 100, 100);
+        
+        std::cout << bob << std::endl;
+        std::cout << alice << std::endl;
+        std::cout << taxForm << std::endl;
+        std::cout << leaveForm << std::endl;
+        
+        // Bob tries to sign TaxForm (grade required = 1)
+        bob.signForm(taxForm);  // Should fail (Bob grade 2 < 1 required)
+        
+        // Bob tries to sign LeaveForm (grade required = 100)
+        bob.signForm(leaveForm);  // Should succeed
+        
+        // Alice tries to sign LeaveForm (grade required = 100)
+        alice.signForm(leaveForm);  // Should succeed or fail depending if signed already
+        
+        // Test beSigned explicitly and catching exception
+        Form contract("Contract", 50, 50);
+        std::cout << contract << std::endl;
+        
+        try {
+            contract.beSigned(alice);  // Alice grade 150 -> too low -> should throw
+        } catch (const std::exception& e) {
+            std::cerr << "Exception caught: " << e.what() << std::endl;
+        }
+        
+        contract.beSigned(bob);  // Bob grade 2 -> should succeed
+        std::cout << contract << std::endl;
+        return 0;
     }
-    catch (std::exception& e) {
-        std::cerr << "Exception during decrement: " << e.what() << '\n';
-    }
+    catch (const std::exception& e) {
+        std::cerr << "Fatal error: " << e.what() << std::endl;
 
-    return 0;
 }
-
+}
