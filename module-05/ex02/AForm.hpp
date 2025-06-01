@@ -12,14 +12,14 @@ private:
     const int           gradeExec;
 
 public:
-    //constructor and destructors
+    //Constructors and Destructor
     AForm();
-    AForm(const std::string name, const int gradeSign, const int gradeExec);
+    AForm(const std::string& name, const int gradeSign, const int gradeExec);
     AForm(const AForm& other);
     AForm& operator=(const AForm& other);
     virtual ~AForm();
     
-    //execeptions
+    //Execeptions
     class GradeTooLowException : public std::exception
     {
     public:

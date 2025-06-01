@@ -2,21 +2,18 @@
 
 
 ShrubberyCreationForm::ShrubberyCreationForm() :
-    AForm("Defualt", 145, 137), target("Default")
-{
-    std::cout << "Default constructor called!";
+    AForm("Defualt", 145, 137), target("Default"){
+    // std::cout << "Default constructor called!";
 }
 
 ShrubberyCreationForm::ShrubberyCreationForm(const std::string& target) :
-    AForm(target, 145, 137), target("Default")
-{
-    std::cout << "Shrubbery constructor called\n";
+    AForm(target, 145, 137), target("Default"){
+    // std::cout << "Shrubbery constructor called\n";
 }
 
-ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm& other) : AForm(other)
-{
+ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm& other) : AForm(other){
     *this = other;
-    std::cout << "Copy constructor called\n";
+    // std::cout << "Copy constructor called\n";
 }
 
 ShrubberyCreationForm& ShrubberyCreationForm::operator=(const ShrubberyCreationForm& other){
@@ -27,7 +24,7 @@ ShrubberyCreationForm& ShrubberyCreationForm::operator=(const ShrubberyCreationF
 
 
 ShrubberyCreationForm::~ShrubberyCreationForm(){
-    std::cout << "Shrubbery Destructor called!\n";
+    // std::cout << "Shrubbery Destructor called!\n";
 }
 
 void    ShrubberyCreationForm::execute(const Bureaucrat& executor)const{
@@ -36,7 +33,6 @@ void    ShrubberyCreationForm::execute(const Bureaucrat& executor)const{
     if(getGradeExec() < executor.getGrade())
         throw GradeTooLowException();
     
-
     std::ofstream file((getName() + "_shrubbery").c_str());
     if(!file.is_open())
         throw std::ios_base::failure("Failed to create a file");
@@ -46,6 +42,7 @@ void    ShrubberyCreationForm::execute(const Bureaucrat& executor)const{
             << "     /   o\\\n"
             << "    /o    o\\\n"
             << "   /--------\\\n"
-            << "      | |   \n"
-            << "      | |    \n";
+            << "      | |    \n"
+            << "      | |     \n";
 }
+

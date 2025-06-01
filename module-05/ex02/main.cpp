@@ -12,7 +12,6 @@ int main()
         Bureaucrat mid("MidGrade", 50);
         Bureaucrat low("LowGrade", 150);
 
-        std::cout << "\n--- Creating Forms ---\n";
         ShrubberyCreationForm shrub("home");
         RobotomyRequestForm robo("Marvin");
         PresidentialPardonForm pardon("Ford");
