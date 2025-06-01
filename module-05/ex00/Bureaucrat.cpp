@@ -38,11 +38,11 @@ const char * Bureaucrat::GradeTooLowException::what() const throw(){
   return "Bureaucrat::GradeTooLowException\n";
 }
 
-const std::string Bureaucrat::getName(){
+const std::string Bureaucrat::getName()const{
   return name;
 }
 
-int Bureaucrat::getGrade(){
+int Bureaucrat::getGrade()const{
   return grade;
 }
 

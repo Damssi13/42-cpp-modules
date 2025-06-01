@@ -1,7 +1,5 @@
 #include "Bureaucrat.hpp"
 
-#include <iostream>
-#include "Bureaucrat.hpp"  // or your actual header
 
 int main() {
     std::cout << "\n---------------------------------------------------------";
