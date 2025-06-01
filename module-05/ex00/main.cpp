@@ -2,35 +2,31 @@
 
 
 int main() {
-    std::cout << "\n---------------------------------------------------------";
     std::cout << "\n--- Testing valid creation ---\n";
     try {
-        Bureaucrat a("Alice", 42);
+        Bureaucrat a("Rachid", 42);
         std::cout << a;
     }
     catch (std::exception& e) {
         std::cerr << "Exception: " << e.what() << '\n';
     }
     
-    std::cout << "\n---------------------------------------------------------";
     std::cout << "\n--- Testing invalid high grade (grade = 0) ---\n";
     try {
-        Bureaucrat b("Bob", 0);  // should throw GradeTooHighException
+        Bureaucrat b("Amine", -21);
     }
     catch (std::exception& e) {
         std::cerr << "Exception: " << e.what() << '\n';
     }
     
-    std::cout << "\n---------------------------------------------------------";
     std::cout << "\n--- Testing invalid low grade (grade = 200) ---\n";
     try {
-        Bureaucrat c("Charlie", 200);  // should throw GradeTooLowException
+        Bureaucrat c("Jaki", 200);
     }
     catch (std::exception& e) {
         std::cerr << "Exception: " << e.what() << '\n';
     }
     
-    std::cout << "\n---------------------------------------------------------";
     std::cout << "\n--- Testing increment and decrement ---\n";
     try {
         Bureaucrat d("David", 2);
@@ -46,10 +42,9 @@ int main() {
         std::cerr << "Exception during increment: " << e.what() << '\n';
     }
     
-    std::cout << "\n---------------------------------------------------------";
     std::cout << "\n--- Testing decrement at low boundary ---\n";
     try {
-        Bureaucrat e("Emma", 149);
+        Bureaucrat e("Med", 149);
         std::cout << e;
 
         e.decrementGrade();  // 149 → 150 (ok)
