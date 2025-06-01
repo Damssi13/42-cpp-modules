@@ -3,7 +3,7 @@
 
 //Defualt Constructor
 Bureaucrat::Bureaucrat() : name("Default"), grade(10){
-  std::cout << "Default constructor called!\n";
+  // std::cout << "Default constructor called!\n";
 }
 
 //Parameteric Constructor
@@ -13,21 +13,26 @@ Bureaucrat::Bureaucrat(const std::string& name, int grade) : name(name){
   else if(grade < 1)
     throw GradeTooHighException();
   this->grade = grade;
-  std::cout << "Bureaucrat Constructor called!\n";
+  // std::cout << "Bureaucrat Constructor called!\n";
 }
 
 //Copy Constructor
 Bureaucrat::Bureaucrat(const Bureaucrat& other){
-  std::cout << "Copy constructor called!\n";
+  // std::cout << "Copy constructor called!\n";
   *this = other;
 }
+
 //Copy assignment
 Bureaucrat  &Bureaucrat::operator=(const  Bureaucrat& other){
-  std::cout << "Copy assignment called!\n";
+  // std::cout << "Copy assignment called!\n";
   if(this != &other){
     grade = other.grade;
   }
   return *this;
+}
+
+Bureaucrat:: ~Bureaucrat(){
+  std::cout << "Bureaucrat Destructor called\n";
 }
 
 const char * Bureaucrat::GradeTooHighException::what() const throw(){
@@ -73,9 +78,6 @@ void Bureaucrat::incrementGrade(){
   grade--;
 }
 
-Bureaucrat:: ~Bureaucrat(){
-  std::cout << "Bureaucrat Destructor called\n";
-}
 
 std::ostream &operator<<(std::ostream &os, Bureaucrat &bureau){
     os << bureau.getName() << ", bureaucrat grade " << bureau.getGrade() << std::endl;

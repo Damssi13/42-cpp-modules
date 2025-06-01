@@ -3,7 +3,7 @@
 //CONSTRUCTORS AND DESTRUCTORS
 
 AForm::AForm() : name("Default"), isSigned(false), gradeSign(10), gradeExec(10){
-    std::cout << "Default constructor\n";
+    // std::cout << "Default constructor\n";
 }
 
 AForm::AForm(const std::string name, const int gradeSign, const int gradeExec) : 
@@ -13,13 +13,12 @@ name(name), isSigned(false), gradeSign(gradeSign), gradeExec(gradeExec){
         throw GradeTooLowException();
     if (gradeSign < 1 || gradeExec < 1)
         throw GradeTooHighException();
-    
-    std::cout << "AForm constructor called!\n";
+    // std::cout << "AForm constructor called!\n";
 }
 
 AForm::AForm(const AForm& other) : 
 isSigned(other.isSigned), gradeSign(other.gradeSign), gradeExec(other.gradeExec){
-    std::cout << "Copy constructor called\n";
+    // std::cout << "Copy constructor called\n";
 }
 
 AForm& AForm::operator=(const AForm& other){
@@ -29,7 +28,7 @@ AForm& AForm::operator=(const AForm& other){
 }
 
 AForm::~AForm(){
-    std::cout << "AForm Destructor called!\n";
+    // std::cout << "AForm Destructor called!\n";
 }
 
 void    AForm::beSigned(Bureaucrat& bureau)

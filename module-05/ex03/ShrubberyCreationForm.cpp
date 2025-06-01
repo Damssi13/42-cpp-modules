@@ -2,21 +2,18 @@
 
 
 ShrubberyCreationForm::ShrubberyCreationForm() :
-    AForm("Defualt", 145, 137), target("Default")
-{
-    std::cout << "Default constructor called!";
+    AForm("Defualt", 145, 137), target("Default"){
+    // std::cout << "Default constructor called!";
 }
 
 ShrubberyCreationForm::ShrubberyCreationForm(const std::string& target) :
-    AForm(target, 145, 137), target("Default")
-{
-    std::cout << "Shrubbery constructor called\n";
+    AForm(target, 145, 137), target("Default"){
+    // std::cout << "Shrubbery constructor called\n";
 }
 
-ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm& other) : AForm(other)
-{
+ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm& other) : AForm(other){
     *this = other;
-    std::cout << "Copy constructor called\n";
+    // std::cout << "Copy constructor called\n";
 }
 
 ShrubberyCreationForm& ShrubberyCreationForm::operator=(const ShrubberyCreationForm& other){
@@ -25,9 +22,8 @@ ShrubberyCreationForm& ShrubberyCreationForm::operator=(const ShrubberyCreationF
     return *this;
 }
 
-
 ShrubberyCreationForm::~ShrubberyCreationForm(){
-    std::cout << "Shrubbery Destructor called!\n";
+    // std::cout << "Shrubbery Destructor called!\n";
 }
 
 void    ShrubberyCreationForm::execute(const Bureaucrat& executor)const{
@@ -50,7 +46,6 @@ void    ShrubberyCreationForm::execute(const Bureaucrat& executor)const{
             << "      | |    \n";
 }
 
-AForm   *ShrubberyCreationForm::createForm(std::string& target)
-{
+AForm   *ShrubberyCreationForm::createForm(std::string& target){
     return new ShrubberyCreationForm(target);
 }

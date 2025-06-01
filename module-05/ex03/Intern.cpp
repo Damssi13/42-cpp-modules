@@ -2,23 +2,21 @@
 
 
 Intern::Intern(){
-    std::cout << "Intern Constructor called!\n";
+    // std::cout << "Intern Constructor called!\n";
 }
 
-Intern::Intern(const Intern& other)
-{
+Intern::Intern(const Intern& other){
+    // std::cout << "Copy Constructor called!\n";
     *this = other;
 }
 
-Intern& Intern::operator=(const Intern& other)
-{
+Intern& Intern::operator=(const Intern& other){
     (void)other;
     return *this;
 }
 
-Intern::~Intern()
-{
-    std::cout << "Intern Destructor called!\n";
+Intern::~Intern(){
+    // std::cout << "Intern Destructor called!\n";
 }
 
 AForm *Intern::makeForm(std::string name, std::string target)
