@@ -1,9 +1,7 @@
 #ifndef FORM_HPP
 #define FORM_HPP
 
-
 #include "Bureaucrat.hpp"
-
 
 class Form{
 private:
@@ -15,7 +13,7 @@ private:
 public:
     //constructor and destructors
     Form();
-    Form(const std::string name, const int gradeSign, const int gradeExec);
+    Form(const std::string& name, const int gradeSign, const int gradeExec);
     Form(const Form& other);
     Form& operator=(const Form& other);
     ~Form();
@@ -33,9 +31,7 @@ public:
         const char* what() const throw();
     };
 
-
     void    beSigned(Bureaucrat& bureau);
-
     
     // getters
     std::string     getName() const;

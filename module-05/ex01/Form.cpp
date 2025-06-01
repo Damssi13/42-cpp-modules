@@ -3,23 +3,22 @@
 //CONSTRUCTORS AND DESTRUCTORS
 
 Form::Form() : name("Default"), isSigned(false), gradeSign(10), gradeExec(10){
-    std::cout << "Default constructor\n";
+    // std::cout << "Default constructor\n";
 }
 
-Form::Form(const std::string name, const int gradeSign, const int gradeExec) : 
+Form::Form(const std::string& name, const int gradeSign, const int gradeExec) : 
 name(name), isSigned(false), gradeSign(gradeSign), gradeExec(gradeExec){
     
     if(gradeSign > 150 || gradeExec > 150)
         throw GradeTooLowException();
     if (gradeSign < 1 || gradeExec < 1)
         throw GradeTooHighException();
-    
-    std::cout << "Form constructor called!\n";
+    // std::cout << "Form constructor called!\n";
 }
 
 Form::Form(const Form& other) : 
 isSigned(other.isSigned), gradeSign(other.gradeSign), gradeExec(other.gradeExec){
-    std::cout << "Copy constructor called\n";
+    // std::cout << "Copy constructor called\n";
 }
 
 Form& Form::operator=(const Form& other){
@@ -29,11 +28,10 @@ Form& Form::operator=(const Form& other){
 }
 
 Form::~Form(){
-    std::cout << "Destructor called!\n";
+    // std::cout << "Destructor called!\n";
 }
 
-void    Form::beSigned(Bureaucrat& bureau)
-{
+void    Form::beSigned(Bureaucrat& bureau){
     if(bureau.getGrade() > gradeSign)
         throw GradeTooLowException();
     isSigned = true;
@@ -67,7 +65,7 @@ int   Form::getGradeExec() const{
 
 std::ostream&   operator<< (std::ostream& os, Form& form){
     os  << "Name:" << form.getName()
-        << ". Gradesign:" << form.getGradeSign()
+        << ". GradeSign:" << form.getGradeSign()
         << ". GradeExec:" << form.getGradeExec()
         << ". Is it signed: " << (form.getIsSigned() ? "YES" : "NO")
         << std::endl;

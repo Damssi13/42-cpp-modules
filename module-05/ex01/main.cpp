@@ -4,42 +4,42 @@
 int main() {
 
     try {
-        Bureaucrat bob("Bob", 2);
-        Bureaucrat alice("Alice", 40);
+        Bureaucrat rachid("rachid", 2);
+        Bureaucrat anas("anas", 60);
         
         Form taxForm("TaxForm", 1, 5);
         Form leaveForm("LeaveForm", 100, 100);
         
-        std::cout << bob << std::endl;
-        std::cout << alice << std::endl;
+        std::cout << rachid << std::endl;
+        std::cout << anas << std::endl;
         std::cout << taxForm << std::endl;
         std::cout << leaveForm << std::endl;
         
-        // Bob tries to sign TaxForm (grade required = 1)
-        bob.signForm(taxForm);  // Should fail (Bob grade 2 < 1 required)
+        // rachid can not sign (1 < 2)
+        rachid.signForm(taxForm);
         
-        // Bob tries to sign LeaveForm (grade required = 100)
-        bob.signForm(leaveForm);  // Should succeed
+        // rachid can sign (100 > 2)
+        rachid.signForm(leaveForm); 
         
-        // Alice tries to sign LeaveForm (grade required = 100)
-        alice.signForm(leaveForm);  // Should succeed or fail depending if signed already
+        // anas can sign (100 > 40)
+        anas.signForm(leaveForm);  
         
         // Test beSigned explicitly and catching exception
         Form contract("Contract", 50, 50);
         std::cout << contract << std::endl;
         
         try {
-            contract.beSigned(alice);  // Alice grade 150 -> too low -> should throw
+            contract.beSigned(anas);  // anas grade 60 -> too low -> should throw
         } catch (const std::exception& e) {
             std::cerr << "Exception caught: " << e.what() << std::endl;
         }
         
-        contract.beSigned(bob);  // Bob grade 2 -> should succeed
+        contract.beSigned(rachid);  // rachid grade 2 -> should succeed
         std::cout << contract << std::endl;
         return 0;
     }
     catch (const std::exception& e) {
-        std::cerr << "Fatal error: " << e.what() << std::endl;
+        std::cerr << "Error: " << e.what() << std::endl;
 
 }
 }
