@@ -36,18 +36,227 @@
 		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": 988.6971396960691,
-			"y": 639.2945528889849,
-			"lastActivityTimestamp": 1748764394171,
+			"x": 729.5332416143477,
+			"y": 1613.8973324936876,
+			"lastActivityTimestamp": 1748777150269,
 			"meta": {}
 		},
 		{
-			"x": -210.8788257357768,
-			"y": 390.069129913884,
-			"z": 0.6616102238682902,
+			"x": 263.7176914483732,
+			"y": 1246.58798927286,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:f03qCwQwDuYFHKAZR5wNQ",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 347.3500061035156,
+				"font": "sans",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "what is public when inheriting ?"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aE09Y",
+			"typeName": "shape"
+		},
+		{
+			"x": 729.5332416143477,
+			"y": 1613.8973324936876,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:hc2b8dzCsElvbSpa2uZ0t",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"points": [
+							{
+								"x": 0,
+								"y": 0,
+								"z": 0.5
+							}
+						]
+					}
+				],
+				"color": "light-green",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": false,
+				"isPen": false,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "aI0pR",
+			"typeName": "shape"
+		},
+		{
+			"x": -136.9659725754594,
+			"y": -661.9647700175121,
+			"z": 0.6372694202507795,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
+		},
+		{
+			"x": 255.76914389776653,
+			"y": 972.1183520719535,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:RvTL9Hofxcd3jl6EaeFxA",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 131.95001220703125,
+				"font": "sans",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "function = 0"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aA03d",
+			"typeName": "shape"
+		},
+		{
+			"x": 256.9614930417687,
+			"y": 870.7160128180943,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:KguA8yfo_bRyDMrqpset7",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 171.28750610351562,
+				"font": "sans",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "virtual keyword"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a89Ll",
+			"typeName": "shape"
+		},
+		{
+			"x": 299.3776099440619,
+			"y": 1277.4814683208183,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:tFWKzbLR6Vev4k-q1tCWx",
+			"type": "text",
+			"props": {
+				"color": "light-green",
+				"size": "m",
+				"w": 494.4437561035156,
+				"font": "sans",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "public become public and protected become "
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "protected and private is not accessible"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aF4Jt",
+			"typeName": "shape"
 		},
 		{
 			"x": 306.72453670145586,
@@ -89,10 +298,11 @@
 			"typeName": "shape"
 		},
 		{
-			"editingShapeId": "shape:LdarTwpCjo0-DYAatOWQ4",
+			"editingShapeId": null,
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:LdarTwpCjo0-DYAatOWQ4"
+				"shape:f03qCwQwDuYFHKAZR5wNQ",
+				"shape:tFWKzbLR6Vev4k-q1tCWx"
 			],
 			"hoveredShapeId": null,
 			"erasingShapeIds": [],
@@ -102,6 +312,45 @@
 			"id": "instance_page_state:page:page",
 			"pageId": "page:page",
 			"typeName": "instance_page_state"
+		},
+		{
+			"x": 250.33719410725706,
+			"y": 652.6889592069332,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:xHbmdIcwe7Mpe_a4Zn7-d",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 425.8375244140625,
+				"font": "sans",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "why do getters should be const in cpp?"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a45L5",
+			"typeName": "shape"
 		},
 		{
 			"x": 307.6125183105469,
@@ -155,6 +404,57 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 281.1473779896182,
+			"y": 681.9776343625664,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:ECFP_3Rw9SBTjcyBeM_v7",
+			"type": "text",
+			"props": {
+				"color": "light-green",
+				"size": "m",
+				"w": 622.3187866210938,
+				"font": "sans",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "it is a good practice to tell the compiler and devloper "
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "that this function shoud not change the member varibale"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a526O",
+			"typeName": "shape"
+		},
+		{
 			"x": 442.7562976505037,
 			"y": 528.7791649646693,
 			"rotation": 0,
@@ -194,6 +494,351 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 261.0081983068704,
+			"y": 761.7199137979649,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:uRC3H-V30-8OJC7Uold9U",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 261.625,
+				"font": "sans",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "prototype of the what();"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a61Se",
+			"typeName": "shape"
+		},
+		{
+			"x": 289.26284618399956,
+			"y": 900.0907429134119,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:ObJ_KE9BwJigOZuLfaEJG",
+			"type": "text",
+			"props": {
+				"color": "light-green",
+				"size": "m",
+				"w": 428.6875305175781,
+				"font": "sans",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "it allows the function to be overriden in"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "the derrived classes"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a97aA",
+			"typeName": "shape"
+		},
+		{
+			"x": 292.1894251253737,
+			"y": 1140.3455228811595,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:onxGXIgyTn70vzmndMhLA",
+			"type": "text",
+			"props": {
+				"color": "light-green",
+				"size": "m",
+				"w": 525.1187744140625,
+				"font": "sans",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "if we don't use virtual the base class destructor"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "only will be called but if we use it both base and"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "derived classes will be called"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aD2sq",
+			"typeName": "shape"
+		},
+		{
+			"x": 255.7691659505361,
+			"y": 1110.8623813707366,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:zI17IToAFqMqF2rqqNto2",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 448.16876220703125,
+				"font": "sans",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "why virtual in derived class's destructor?"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aC6fW",
+			"typeName": "shape"
+		},
+		{
+			"x": 305.14446549447734,
+			"y": 1393.4647484022066,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:4mc11GFMd1-dTi3DoROc4",
+			"type": "text",
+			"props": {
+				"color": "light-green",
+				"size": "m",
+				"w": 425.0875244140625,
+				"font": "sans",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "because it can be called withou an obj,"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "just using the class"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aH1u7",
+			"typeName": "shape"
+		},
+		{
+			"x": 290.99712008691085,
+			"y": 1000.6801288705983,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:GBNUYLDCyG_ouhAP8DBG6",
+			"type": "text",
+			"props": {
+				"color": "light-green",
+				"size": "m",
+				"w": 513.8687744140625,
+				"font": "sans",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "this is what it makes a function a pure virtual "
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "function and makes its class abstract and can't"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "be instantiated (can make objs out of it)"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aBAcy",
+			"typeName": "shape"
+		},
+		{
+			"x": 265.6007318611979,
+			"y": 1361.4531317047747,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:c4VxZl2PfDxDn1G-L8RN0",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 286.3937683105469,
+				"font": "sans",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "why createForm is static ?"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aG1Kp",
+			"typeName": "shape"
+		},
+		{
 			"meta": {},
 			"id": "page:page",
 			"name": "Page 1",
@@ -210,11 +855,14 @@
 		{
 			"followingUserId": null,
 			"opacityForNextShape": 1,
-			"stylesForNextShape": {},
+			"stylesForNextShape": {
+				"tldraw:font": "sans",
+				"tldraw:color": "light-green"
+			},
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
-				"type": "default",
+				"type": "cross",
 				"rotation": 0
 			},
 			"isFocusMode": false,
@@ -224,7 +872,7 @@
 			"screenBounds": {
 				"x": 0,
 				"y": 0,
-				"w": 938.4000244140625,
+				"w": 711.6000366210938,
 				"h": 800.4000244140625
 			},
 			"insets": [
@@ -251,6 +899,57 @@
 			"id": "instance:instance",
 			"currentPageId": "page:page",
 			"typeName": "instance"
+		},
+		{
+			"x": 283.7010975280072,
+			"y": 791.821528096984,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:xXwK0YWbGaPZpbCrhXfg1",
+			"type": "text",
+			"props": {
+				"color": "light-green",
+				"size": "m",
+				"w": 534.25,
+				"font": "sans",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "the throw in the end means that this function"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "will not throw any exception (noexcept in c++11)"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a71Qu",
+			"typeName": "shape"
 		}
 	]
 }
