@@ -36,9 +36,9 @@
 		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": 383.2125065040588,
-			"y": 637.8187523746492,
-			"lastActivityTimestamp": 1749972063872,
+			"x": 450.41251871109006,
+			"y": 101.418752398491,
+			"lastActivityTimestamp": 1749972389365,
 			"meta": {}
 		},
 		{
@@ -101,11 +101,9 @@
 			"typeName": "shape"
 		},
 		{
-			"editingShapeId": "shape:jJDjnqBHUOrGU84P358Mb",
+			"editingShapeId": null,
 			"croppingShapeId": null,
-			"selectedShapeIds": [
-				"shape:jJDjnqBHUOrGU84P358Mb"
-			],
+			"selectedShapeIds": [],
 			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
@@ -114,6 +112,63 @@
 			"id": "instance_page_state:page:page",
 			"pageId": "page:page",
 			"typeName": "instance_page_state"
+		},
+		{
+			"x": 119.42672926652165,
+			"y": 680.9088891726263,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:OYi0MPB0ENpsgJI3MSKml",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 925.9937744140625,
+				"font": "sans",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"marks": [
+										{
+											"type": "link",
+											"attrs": {
+												"href": "https://www.geeksforgeeks.org/reinterpret_cast-in-c-type-casting-operators/",
+												"target": "_blank",
+												"rel": "noopener",
+												"class": null
+											}
+										},
+										{
+											"type": "bold"
+										}
+									],
+									"text": "reinterpret_cast"
+								},
+								{
+									"type": "text",
+									"text": " operator: is used to convert the pointer to any other type of pointer."
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a45PV",
+			"typeName": "shape"
 		},
 		{
 			"x": 121.61250802993773,
@@ -257,7 +312,7 @@
 			"isFocused": true,
 			"devicePixelRatio": 0.8333333134651184,
 			"isCoarsePointer": false,
-			"isHoveringCanvas": true,
+			"isHoveringCanvas": false,
 			"openMenus": [],
 			"isChangingStyle": false,
 			"isReadonly": false,

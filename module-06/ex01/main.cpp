@@ -19,7 +19,7 @@ int main(){
     std::cout << "Data name : " << ptr->name << std::endl;
 
     if (ptr == &data)
-        std::cout << "✅ Pointer matches!" << std::endl;
+        std::cout << "✅ Pointer matches!" << std::endl;m
     else
         std::cout << "❌ Pointer mismatch!" << std::endl;
 
