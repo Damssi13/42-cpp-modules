@@ -30,7 +30,8 @@ void    ScalarConverter::convert(const std::string& literal)
         floatConverter(literal);
     else if(isDouble(literal))
         doubleConverter(literal);
-
+    else
+        std::cerr << "Unvalid input!\n";
 
 }
 
@@ -84,16 +85,20 @@ void    ScalarConverter::intConverter(const std::string& literal){
     {
         std::cout << "char: impossible\n" << "int: impossible\n"
                   << "float: impossible\n" << "double: impossible\n";
+        return ;
     }
 
-    printChar(static_cast<char>(value));
+    if(value >= 0 && value <= 126)
+        printChar(static_cast<char>(value));
+    else
+        std::cout << "char: impossible\n";
     printInt(static_cast<int>(value));
     printFloat(static_cast<float>(value));
     printDouble(static_cast<double>(value));
 }
 
 void    ScalarConverter::floatConverter(const std::string& literal){
-    float value;
+    float value = 0.0f;
 
     if(literal == "nanf" || literal == "+inff" || literal == "-inff")
     {
@@ -122,7 +127,7 @@ void    ScalarConverter::floatConverter(const std::string& literal){
 }
 
 void    ScalarConverter::doubleConverter(const std::string& literal){
-    double value;
+    double value = 0.0;
 
     if(literal == "nan" || literal == "+inf" || literal == "-inf")
     {
