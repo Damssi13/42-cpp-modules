@@ -88,7 +88,7 @@ void    ScalarConverter::intConverter(const std::string& literal){
         return ;
     }
 
-    if(value >= 0 && value <= 126)
+    if(value >= 0 && value <= 127)
         printChar(static_cast<char>(value));
     else
         std::cout << "char: impossible\n";
