@@ -1,7 +1,5 @@
 #include "Serializer.hpp"
 
-
-
 int main(){
     Data data;
     data.i = 42;

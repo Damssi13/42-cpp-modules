@@ -1,5 +1,5 @@
 #include "Serializer.hpp"
-
+#include <stdio.h>
 Serializer::Serializer() {}
 
 Serializer::Serializer(const Serializer& other){

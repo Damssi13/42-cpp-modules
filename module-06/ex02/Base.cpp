@@ -18,7 +18,7 @@ Base    *generate()
 
 void    identify(Base *p)
 {
-    if(dynamic_cast<A *>(p)) // why we did A* and not only A.
+    if(dynamic_cast<A *>(p))
         std::cout << "A\n";
     else if(dynamic_cast<B *>(p)) 
         std::cout << "B\n";
