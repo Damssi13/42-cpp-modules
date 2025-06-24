@@ -4,10 +4,8 @@
 #include <iostream>
 #include <string>
 
-
-
 template <typename T>
-void iter(T* addr, size_t len, void (*func)(T&)){
+void iter(T* addr, size_t len, void (*func)( T&)){
     size_t i = 0;
     while(i < len)
     {
@@ -16,5 +14,14 @@ void iter(T* addr, size_t len, void (*func)(T&)){
     }
 };
 
+template <typename T>
+void iter(const T* addr, size_t len, void (*func)(const T&)){
+    size_t i = 0;
+    while(i < len)
+    {
+        func(addr[i]);
+        i++;
+    }
+};
 
 #endif

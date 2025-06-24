@@ -14,7 +14,9 @@ int main()
 {
     int array[3] = {13,15,19};
 
-    iter(array,3,print<int>);
+    iter(array,3,add< int>);
 
-    std::cout << 
+    for(int i = 0;i < 3;i++)
+        std::cout << array[i] << std::endl;
+
 }
