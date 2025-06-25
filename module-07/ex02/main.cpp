@@ -1,7 +1,8 @@
 #include <iostream>
-#include <Array.hpp>
+#include "Array.hpp"
+#include <cstdlib>
 
-#define MAX_VAL 750
+#define MAX_VAL 3
 int main(int, char**)
 {
     Array<int> numbers(MAX_VAL);
@@ -51,3 +52,10 @@ int main(int, char**)
     delete [] mirror;//
     return 0;
 }
+
+// int main()
+// {
+//     Array<int> data(0);
+//     Array<char> _string(0);
+
+// }

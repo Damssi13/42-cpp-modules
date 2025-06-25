@@ -1,17 +1,16 @@
 #ifndef ARRAY_HPP
 #define ARRAY_HPP
 
-#include <exception>
+#include <stdexcept>
 #include <iostream>
-#include "Array.tpp"
 
 template <typename T> 
 class Array{
-private:
+    private:
     T   *array;
     unsigned int _size;
-
-public:
+    
+    public:
     Array();
     Array(unsigned int n);
     Array(const Array& other);
@@ -19,8 +18,10 @@ public:
     ~Array();
 
 
-    void    size() const;
-}
+    unsigned int    size() const;
+    T&  operator[](unsigned int index);
+};
 
+#include "Array.tpp"
 
 #endif
