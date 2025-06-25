@@ -19,4 +19,8 @@ int main()
     for(int i = 0;i < 3;i++)
         std::cout << array[i] << std::endl;
 
+    const char strArray[5] = {'H','e','l','l','o'};
+
+    iter(strArray, 5, print);
+
 }
