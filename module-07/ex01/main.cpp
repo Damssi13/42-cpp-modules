@@ -1,26 +1,28 @@
 #include "iter.hpp"
 
 template <typename T>
-void    add(T& x){
-    x++;
+void    add(T& i){
+    i += 1;
 }
 
 template <typename T>
-void    print(T& x){
-    std::cout << x << std::endl;
+void   printit(T& i)
+{
+    std::cout << i <<std::endl;
+}
+
+
+template <typename T>
+void    print(T& i){
+    std::cout << i << std::endl;
 }
 
 int main()
 {
-    int array[3] = {13,15,19};
+    float array[3] = {23.1, 44.43, 12.42};
 
-    iter(array,3,add< int>);
-
-    for(int i = 0;i < 3;i++)
-        std::cout << array[i] << std::endl;
-
-    const char strArray[5] = {'H','e','l','l','o'};
-
-    iter(strArray, 5, print);
-
+    iter(array,3,printit< float>);
+    iter(array,3,add< float>);
+    std::cout << "___________________\n";
+    iter(array,3,printit< float>);
 }
