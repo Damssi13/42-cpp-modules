@@ -2,11 +2,15 @@
 
 template <typename T>
 Array<T>::Array() : array(NULL), _size(0) 
-{std::cout << "Default called!\n";}
+{
+    // std::cout << "Default called!\n";
+}
 
 template <typename T>
 Array<T>::Array(unsigned int n) : array(new T[n]()), _size(n) 
-{/*std::cout << "Parameterized called!\n";*/}
+{
+    // std::cout << "Parameterized called!\n";
+}
 
 
 template <typename T>
@@ -26,7 +30,6 @@ Array<T> &Array<T>::operator=(const Array<T>& other)
         array = new T[_size];
         for(unsigned int i = 0; i < _size; i++)
             array[i] = other.array[i];
-        // std::cout << "Inside condition called called!\n";
     }
     // std::cout << "Operator called!\n";
     return *this;
