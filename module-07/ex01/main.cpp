@@ -2,8 +2,11 @@
 
 template <typename T>
 void    add(T& i){
-    i += 1;
+    in
+    if (i > )
 }
+
+
 
 template <typename T>
 void   printit(T& i)
@@ -12,17 +15,20 @@ void   printit(T& i)
 }
 
 
+
 template <typename T>
 void    print(T& i){
     std::cout << i << std::endl;
 }
+
+
 
 int main()
 {
     float array[3] = {23.1, 44.43, 12.42};
 
     iter(array,3,printit< float>);
-    iter(array,3,add< float>);
+    iter(array,3,add<float>);
     std::cout << "___________________\n";
     iter(array,3,printit< float>);
 }
