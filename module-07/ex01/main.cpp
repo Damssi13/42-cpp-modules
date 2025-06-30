@@ -2,8 +2,7 @@
 
 template <typename T>
 void    add(T& i){
-    in
-    if (i > )
+    i += 2;
 }
 
 
