@@ -14,6 +14,7 @@ class Span{
 private:
     std::vector<int> numbers;
     unsigned int max_size;
+
 public:
     Span();
     Span(unsigned int N);
@@ -22,8 +23,22 @@ public:
     ~Span();
 
     void    addNumber(int n);
-    void    shortestSpan();
-    void    longestSpan();
+    int    shortestSpan();
+    int    longestSpan();
+
+    template <typename iterator_T>
+    void    addManyNumbers(iterator_T begin, iterator_T end)
+    {
+        while(begin != end)
+        {
+            if(numbers.size() >= max_size)
+                throw std::runtime_error("No left space to store a number");
+            numbers.push_back(*begin);
+            begin++;
+        }
+    }
+    // int     biggest();
+    // int     smallest();
 };
 
 #endif

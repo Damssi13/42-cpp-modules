@@ -17,19 +17,21 @@ int main()
     {
         std::cerr << e.what() << '\n';
     }
+    
     std::cout << "___________________________________" << std::endl;
     try
     {
         std::vector<int> data;
         int a = 0;
-        srand(time(NULL));
+        srand(time(0));
         for (int i = 0; i < 1000; ++i)
         {
             a = rand();
             data.push_back(a);
         }
+
         Span test(1000);
-        test.addLotOfNum(data.begin(), data.end());
+        test.addManyNumbers(data.begin(), data.end());
         std::cout << test.shortestSpan() << std::endl;
         std::cout << test.longestSpan() << std::endl;
     }
@@ -39,4 +41,4 @@ int main()
     }
 
     return 0;
-}% 
+}
