@@ -1,5 +1,5 @@
-#ifndef EASYFIND_HPP
-#define EASYFIND_HPP
+#ifndef SHARMOLA
+#define SHARMOLA
 
 #include <iostream>
 #include <vector>
@@ -9,14 +9,16 @@
 template <typename T>
 typename T::iterator   easyfind(T &container, int y)
 {
-    for(typename T::iterator it = container.begin() ; it != container.end(); it++)
-    {
-        if(*it == y)
-            return it;
-    }
-    throw(std::runtime_error("Not found !"));
+
+    typename T::iterator it = std::find(container.begin(), container.end(), y);
+
+    if(it != container.end())
+        return it;
+    else
+        throw std::runtime_error("Not Found !");
+
+
 
 }
-
 
 #endif
