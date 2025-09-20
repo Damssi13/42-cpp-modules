@@ -24,12 +24,15 @@ BitcoinExchange::BitcoinExchange(const std::string& file)
     fdata.close();
 }
 
-BitcoinExchange::BitcoinExchange(const BitcoinExchange& other) {(void)other;} ///NEEDS TO EDIT
+BitcoinExchange::BitcoinExchange(const BitcoinExchange& other) : _table(other._table), _strs(other._strs)  {} ///NEEDS TO EDIT
 
 BitcoinExchange& BitcoinExchange::operator=(const BitcoinExchange& other)
 {
-    // if(this != &other)
-    (void)other;
+    if(this != &other)
+    {
+        _table = other._table;
+        _strs = other._strs;
+    }
     return *this;
 }
 

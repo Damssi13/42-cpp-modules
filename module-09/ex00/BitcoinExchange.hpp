@@ -9,11 +9,10 @@
 
 class BitcoinExchange{
 private:
-    std::string _strs;
     std::map<std::string, float> _table; 
+    std::string _strs;
 
 public:
-
     BitcoinExchange();
     BitcoinExchange(const std::string& file);
     BitcoinExchange(const BitcoinExchange& other);
