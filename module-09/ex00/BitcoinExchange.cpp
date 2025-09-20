@@ -5,9 +5,26 @@ BitcoinExchange::BitcoinExchange() {}
 BitcoinExchange::BitcoinExchange(const std::string& file)
 {
     (void)file;
+    std::ifstream fdata(file.c_str());
+    if(!fdata.is_open())
+        throw std::runtime_error("Could not open the data file.");
+
+    std::string line;
+    getline(fdata, line);
+    while(getline(fdata, line))
+    {
+        std::string date, rate;
+        std::istringstream ss(line);
+        if(getline(ss, date, ',') && getline(ss, rate))
+        {
+            float price = atof(rate.c_str());
+            _table[date] = price;
+        }
+    }
+    fdata.close();
 }
 
-BitcoinExchange::BitcoinExchange(const BitcoinExchange& other) {(void)other;}
+BitcoinExchange::BitcoinExchange(const BitcoinExchange& other) {(void)other;} ///NEEDS TO EDIT
 
 BitcoinExchange& BitcoinExchange::operator=(const BitcoinExchange& other)
 {
@@ -27,74 +44,60 @@ void    BitcoinExchange::parse(const std::string& file)
     if(!filein.is_open())
         throw std::runtime_error("Could not open the file");
 
-    while(std::getline(filein, line))
+    
+    while(std::getline(filein, line))//it fills the _strs with the content of input.txt
     {
-        std::cout << ++lines << std::endl;
+        if(++lines == 1)
+            continue;
         _strs += parseLine(line) + "\n";
     }
-
-    std::cout << _strs << std::endl;
+    std::cout << _strs;
     filein.close();
     exit(1);
 
 
-
-
-
-
-
-    // int pos = 0;
-    // if(_strs.find("|") == std::string::npos)
-    //     throw 
-    // while(_strs[pos])
-    // {
-    //     while(_strs[pos] != '\n')
-    //     {   
-    //         if(_strs[pos])
-    //     }
-    // }
 }
 
 std::string    BitcoinExchange::parseLine(std::string& line)
 {
     size_t pipe;
-    double num;
+    float num;
     pipe =  line.find("|");
     if(pipe == std::string::npos)
         return "Unvalid format.";
     
-    std::string date;
-    std::string value;
+    std::string date, value;
 
-    date = line.substr(0, pipe);
-    value = line.substr(pipe + 1);
+    date = trim(line.substr(0, pipe));
+    value = trim(line.substr(pipe + 1));
+
     std::stringstream ss(value);
     ss >> num;
-
+    if(!validDate(date))
+        return ("Error: bad input => " + date);
     if(num > 1000)
         return "Error: too large number.";
-    else if(num < 0 || isDigit(value))
+    else if(num < 0 || ss.fail() || !ss.eof())
         return "Error: not a positive number.";
-
-
-    if(!validDate(date))
 
     date = trim(date);
     value = trim(value);
-    return date + "|" + value;
-
-}
-
-bool BitcoinExchange::isDigit(const std::string &str)
-{
-
-    for (size_t i = 0; i < str.size(); i++)
+    std::map<std::string, float>::const_iterator cit = _table.lower_bound(date);//return the key if found if not returns greater value, if greater value does not exist either returns the end of the map
+    // the key was smaller and not found
+    if(cit->first != date)
     {
-        if (!isdigit(str[i]))
-            return false;
+        if(cit != _table.begin() || cit == _table.end())
+            cit--;
+        else
+            return "Error: No exchange rate available before the date: " + date;
     }
-    return true;
+    std::stringstream result;
+    result << date << " => "  << (num * cit->second);
+
+    return result.str();
+
 }
+
 
 //   too large number
 //   not a positive number
@@ -102,20 +105,28 @@ bool BitcoinExchange::isDigit(const std::string &str)
 
 bool BitcoinExchange::validDate(const std::string& date)
 {
-    size_t first;
-    first = date.find("-");
-    std::string year = date.substr(0, first);
+    if(date.length() != 10 || date[4] != '-' || date[7] != '-' )
+        return false;
+// std::cout << "DATE: " << date << std::endl;
+    std::string m, d, y;
+    m = date.substr(5, 2);
+    d = date.substr(8, 2);
+    y = date.substr(0, 4);
 
+    if(!isDigits(y) || !isDigits(m) || !isDigits(d))
+        return false;
+
+    int month = atoi(m.c_str());
+    int day = atoi(d.c_str());
+
+    if(month > 12 || month <= 0 || day > 31 || day <= 0)
+        return false;
+    return true;
 
 }
 
 
-// bool BitcoinExchange::validValue(const std::string& value)
-// {
-    
-// }
-
-std::string trim(std::string& data)
+std::string trim(const std::string& data)
 {
     size_t first = 0;
     while (first < data.size() && std::isspace(data[first]))
@@ -129,4 +140,14 @@ std::string trim(std::string& data)
         --last;
 
     return data.substr(first, last - first + 1);
+}
+
+bool isDigits(const std::string& number)
+{
+    for(size_t i = 0; i < number.length(); i++)
+    {
+        if(!std::isdigit(number[i]))
+            return false;
+    }
+    return true;
 }

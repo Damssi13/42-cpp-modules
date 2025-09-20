@@ -1,6 +1,5 @@
 #pragma once
 
-
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
@@ -23,10 +22,10 @@ public:
 
     void            parse(const std::string& file);
     std::string     parseLine(std::string& line);
-    bool            validValue(std::string& value);
+    void            validValue(std::string& value);//should be bool
     bool            validDate(const std::string& date);
-    bool            isDigit(const std::string& str);
 
 };
 
-std::string trim(std::string& data);
+std::string trim(const std::string& data);
+bool isDigits(const std::string& number);
