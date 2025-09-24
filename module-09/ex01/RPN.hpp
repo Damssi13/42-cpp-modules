@@ -8,7 +8,6 @@
 class RPN{
 private:
     std::stack<int> _stack;
-    char _operator;
 
 public:
     RPN();
@@ -16,7 +15,7 @@ public:
     RPN& operator=(const RPN& other);
     ~RPN();
 
-
-    void    processExpresstion(std::string& expression);
+    int     calculate(int a, int b, char token);
+    void    processExpresstion(const std::string& expression);
     bool    validToken(int token);
 };
