@@ -1,0 +1,19 @@
+#include "PmergMe.hpp"
+
+
+int main(int ac, char **av)
+{
+    if(ac < 2)
+    {
+        std::cerr << "Error: Unvalid number of arguments\n";
+        return 1;
+    }
+    try{
+        rachid test1;
+        test1.parse(ac, av);
+    }
+    catch(std::runtime_error& e)
+    {
+        std::cerr << e.what();
+    }
+}

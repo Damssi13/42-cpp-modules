@@ -1,7 +1,7 @@
 NAME = PmergerMe
 CXX = c++
 CXXFLAGS = -std=c++98 -Wall -Wextra -Werror
-SRCS = main.cpp RPN.cpp
+SRCS = main.cpp PmergeMe.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)
@@ -18,3 +18,4 @@ fclean: clean
 re: fclean all
 
 .PHONY: clean
+	
