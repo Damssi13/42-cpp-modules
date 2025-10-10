@@ -8,8 +8,8 @@
 
 class rachid{
 private:
-    std::vector<unsigned int> _vec;
-    std::deque<unsigned int> _deq;
+    std::vector<int> _vec;
+    std::deque<int> _deq;
 public:
     rachid();
     rachid(const rachid& other);
@@ -17,7 +17,10 @@ public:
     ~rachid();
 
     void    parse(int ac, char** av);
+    void    sort();
     bool    isValidNumber(std::string str);
+    void    mergeInsertionSort();
+    std::vector<int> getInsertionPos(size_t size);
 };
 
-void    print_vec(std::vector<unsigned int> vec);
+void    print_vec(std::vector<int> vec);

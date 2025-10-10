@@ -11,6 +11,7 @@ int main(int ac, char **av)
     try{
         rachid test1;
         test1.parse(ac, av);
+        test1.sort();
     }
     catch(std::runtime_error& e)
     {
