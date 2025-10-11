@@ -114,7 +114,17 @@ void    rachid::mergeInsertionSort()
     //Insert the rest of the number using the jacobsthal sequence
     if(losers.size() > 1)
     {
-        std::vector<int> jacob = getInsertionPos(losers.size());
+        std::vector<int>  insertionOrder= getInsertionPos(losers.size());
+        
+        for (size_t i = 0; i < insertionOrder.size(); i++)
+        {
+            int idx = insertionOrder[i];
+            if (idx > 0 && idx < (int)losers.size())
+            {
+                std::vector<int>::iterator pos = std::lower_bound(result.begin(), result.end(),  losers[idx]);
+                result.insert(pos,  losers[idx]);
+            }
+        }
     }
 
     //if it's odd insert the oddNumber
@@ -129,10 +139,52 @@ void    rachid::mergeInsertionSort()
 
 std::vector<int>    rachid::getInsertionPos(size_t size)
 {
+    std::vector<int> jacobSeq = getJacob(size);
+    std::vector<int> order;
+    std::vector<bool> used(size, false);
+    used[0] = true;
 
+    for (size_t i = 1; i < jacobSeq.size() && jacobSeq[i] < static_cast<int>(size); i++)//3
+    {
+        if (!used[jacobSeq[i]]) {
+            order.push_back(jacobSeq[i]);
+            used[jacobSeq[i]] = true;
+        }
+        
+        for (int j = jacobSeq[i] - 1; j > jacobSeq[i-1]; j--) {// j = 5 
+            if (j < (int)size && !used[j]) {
+                order.push_back(j);
+                used[j] = true;
+            }
+        }
+    }
+
+    for (size_t i = 1; i < size; i++) {
+        if (!used[i]) {
+            order.push_back(i);
+        }
+    }
+
+    return order;
 }
 
-
+std::vector<int>    getJacob(size_t size)
+{
+    std::vector<int> jacobsthal;
+    jacobsthal.push_back(0);
+    jacobsthal.push_back(1);
+    
+    while (jacobsthal.back() < static_cast<int>(size))
+    {
+        int lastNum = jacobsthal.back();
+        int secondLastNum = jacobsthal[jacobsthal.size() - 2];
+        
+        int next = lastNum + 2 * secondLastNum;
+        jacobsthal.push_back(next);
+    }
+    
+    return jacobsthal;//
+}
 
 void    rachid::sort()
 {
