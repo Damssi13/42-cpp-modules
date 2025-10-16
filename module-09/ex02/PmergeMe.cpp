@@ -1,5 +1,7 @@
 #include "PmergMe.hpp"
-int callStack = 0;
+
+template void rachid::printContainer<std::vector<int> >(const std::vector<int>);
+
 rachid::rachid() {}
 
 rachid::rachid(const rachid& other) : _vec(other._vec), _deq(other._deq) {}
@@ -12,7 +14,7 @@ rachid& rachid::operator=(const rachid& other)
         _vec = other._vec;
     }
     return *this;
-}
+}   
 
 rachid::~rachid() {}
 
@@ -30,114 +32,10 @@ void   rachid::parse(int ac, char **av)
         _vec.push_back(num);
         _deq.push_back(num);
     }
-    print_vec(_vec);
+    // print_vec(_vec);
 }
 
-//2147483647
-bool    rachid::isValidNumber(std::string str)
-{
-    if(str.empty())
-        return false;
-    for(size_t i = 0; i < str.size(); i++)
-    {
-        if(!std::isdigit(str[i]))
-            return false;
-    }
-    return true;
-}
-
-void    print_vec(std::vector<int> vec)
-{
-    std::vector<int>::iterator vit = vec.begin();
-    
-    while(vit != vec.end())
-    {
-        std::cout << *vit << " ";
-        vit++;
-    }
-    std::cout << std::endl;
-}
-
-
-void    rachid::mergeInsertionSort()
-{
-    callStack++;
-    if(_vec.size() <= 1)//base case
-        return ;
-
-    bool iSOdd = false;
-    int oddNumber = 0;
-
-    if(_vec.size() % 2 == 1)// is odd
-    {
-        iSOdd = true;
-        oddNumber = _vec.back();
-        _vec.pop_back();
-    }
-
-    std::vector<std::vector<int> > pairs;
-    for(int i = 0; i <  _vec.size(); i += 2)
-    {
-        int first = _vec[i];
-        int second = _vec[i + 1];
-        if(first > second)
-            std::swap(first, second);
-        pairs.push_back({first, second});
-    }
-
-    std::vector<int> winners;
-    for(int i = 0;i < pairs.size(); i++)
-        winners.push_back(pairs[i][1]);
-
-    if(winners.size() > 1)
-    {
-        _vec = winners;
-        mergeInsertionSort();
-        winners = _vec;
-    }
-
-
-    std::vector<int> result = winners;
-
-    std::cout << "call Stack number: " << callStack << std::endl;
-    std::vector<int> losers;
-    for(int i = 0; i < pairs.size(); i++)
-        losers.push_back(pairs[i][0]);
-
-    //if losers are full --> insert the first element of losers to the result
-    if(!losers.empty())
-    {
-        std::vector<int>::iterator pos = std::lower_bound(result.begin(), result.end(), losers[0]);
-        result.insert(pos, losers[0]);
-    }
-
-    //Insert the rest of the number using the jacobsthal sequence
-    if(losers.size() > 1)
-    {
-        std::vector<int>  insertionOrder= getInsertionPos(losers.size());
-        
-        for (size_t i = 0; i < insertionOrder.size(); i++)
-        {
-            int idx = insertionOrder[i];
-            if (idx > 0 && idx < (int)losers.size())
-            {
-                std::vector<int>::iterator pos = std::lower_bound(result.begin(), result.end(),  losers[idx]);
-                result.insert(pos,  losers[idx]);
-            }
-        }
-    }
-
-    //if it's odd insert the oddNumber
-    if(iSOdd)
-    {
-        std::vector<int>::iterator pos = std::lower_bound(result.begin(), result.end(), oddNumber);
-        result.insert(pos, oddNumber);
-    }
-
-    _vec = result;
-}
-
-std::vector<int>    rachid::getInsertionPos(size_t size)
+std::vector<int> rachid::getInsertionPos(size_t size)
 {
     std::vector<int> jacobSeq = getJacob(size);
     std::vector<int> order;
@@ -167,8 +65,109 @@ std::vector<int>    rachid::getInsertionPos(size_t size)
 
     return order;
 }
+bool    rachid::isValidNumber(std::string str)
+{
+    if(str.empty())
+        return false;
+    for(size_t i = 0; i < str.size(); i++)
+    {
+        if(!std::isdigit(str[i]))
+            return false;
+    }
+    return true;
+}
 
-std::vector<int>    getJacob(size_t size)
+template <typename Container> void    rachid::printContainer(Container cont)
+{
+    typename Container::iterator it = cont.begin();
+    
+    while(it != cont.end())
+    {
+        std::cout << *it << " ";
+        it++;
+    }
+    std::cout << std::endl;
+}
+
+
+
+void    rachid::SortVec()
+{
+    if(_vec.size() <= 1)//base case
+    return ;
+    
+    bool iSOdd = false;
+    int oddNumber = 0;
+    
+    if(_vec.size() % 2 == 1)// is odd
+    {
+        iSOdd = true;
+        oddNumber = _vec.back();
+        _vec.pop_back();
+    }
+    
+    std::vector<std::pair<int, int> > pairs;
+    for(size_t i = 0; i <  _vec.size(); i += 2)
+    {
+        int first = _vec[i];
+        int second = _vec[i + 1];
+        if(first > second)
+        std::swap(first, second);
+        pairs.push_back(std::make_pair(first, second));
+    }
+    
+    std::vector<int> winners;
+    for(size_t i = 0;i < pairs.size(); i++)
+    winners.push_back(pairs[i].second);
+    
+    if(winners.size() > 1)
+    {
+        _vec = winners;
+        SortVec();
+        winners = _vec;
+    }
+    
+    
+    std::vector<int> result = winners;
+    
+    std::vector<int> losers;
+    for(size_t i = 0; i < pairs.size(); i++)
+    losers.push_back(pairs[i].first);
+    
+    //if losers are full --> insert the first element of losers to the result
+    if(!losers.empty())
+    {
+        std::vector<int>::iterator pos = std::lower_bound(result.begin(), result.end(), losers[0]);
+        result.insert(pos, losers[0]);
+    }
+    
+    //Insert the rest of the number using the jacobsthal sequence
+    if(losers.size() > 1)
+    {
+        std::vector<int>  insertionOrder= getInsertionPos(losers.size());
+        
+        for (size_t i = 0; i < insertionOrder.size(); i++)
+        {
+            int idx = insertionOrder[i];
+            if (idx > 0 && idx < (int)losers.size())
+            {
+                std::vector<int>::iterator pos = std::lower_bound(result.begin(), result.end(),  losers[idx]);
+                result.insert(pos,  losers[idx]);
+            }
+        }
+    }
+    
+    //if it's odd insert the oddNumber
+    if(iSOdd)
+    {
+        std::vector<int>::iterator pos = std::lower_bound(result.begin(), result.end(), oddNumber);
+        result.insert(pos, oddNumber);
+    }
+    
+    _vec = result;
+}
+
+std::vector<int> rachid::getJacob(size_t size)
 {
     std::vector<int> jacobsthal;
     jacobsthal.push_back(0);
@@ -183,16 +182,110 @@ std::vector<int>    getJacob(size_t size)
         jacobsthal.push_back(next);
     }
     
-    return jacobsthal;//
+    return jacobsthal;
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+void    rachid::SortDeq()
+{
+    if(_deq.size() <= 1)//base case
+        return ;
+    
+    bool iSOdd = false;
+    int oddNumber = 0;
+    
+    if(_deq.size() % 2 == 1)// is odd
+    {
+        iSOdd = true;
+        oddNumber = _deq.back();
+        _deq.pop_back();
+    }
+    
+    std::vector<std::pair<int, int> > pairs;
+    for(size_t i = 0; i <  _deq.size(); i += 2)
+    {
+        int first = _deq[i];
+        int second = _deq[i + 1];
+        if(first > second)
+            std::swap(first, second);
+        pairs.push_back(std::make_pair(first, second));
+    }
+    
+    std::deque<int> winners;
+    for(size_t i = 0;i < pairs.size(); i++)
+    winners.push_back(pairs[i].second);
+    
+    if(winners.size() > 1)
+    {
+        _deq = winners;
+        SortDeq();
+        winners = _deq;
+    }
+    
+    
+    std::deque<int> result = winners;
+    
+    std::deque<int> losers;
+    for(size_t i = 0; i < pairs.size(); i++)
+    losers.push_back(pairs[i].first);
+    
+    //if losers are full --> insert the first element of losers to the result
+    if(!losers.empty())
+    {
+        std::deque<int>::iterator pos = std::lower_bound(result.begin(), result.end(), losers[0]);
+        result.insert(pos, losers[0]);
+    }
+    
+    //Insert the rest of the number using the jacobsthal sequence
+    if(losers.size() > 1)
+    {
+        std::vector<int>  insertionOrder= getInsertionPos(losers.size());
+        
+        for (size_t i = 0; i < insertionOrder.size(); i++)
+        {
+            int idx = insertionOrder[i];
+            if (idx > 0 && idx < (int)losers.size())
+            {
+                std::deque<int>::iterator pos = std::lower_bound(result.begin(), result.end(),  losers[idx]);
+                result.insert(pos,  losers[idx]);
+            }
+        }
+    }
+    
+    //if it's odd insert the oddNumber
+    if(iSOdd)
+    {
+        std::deque<int>::iterator pos = std::lower_bound(result.begin(), result.end(), oddNumber);
+        result.insert(pos, oddNumber);
+    }
+    
+    _deq = result;
 }
 
 void    rachid::sort()
 {
+    std::cout << "Before: ";
+    printContainer(_vec);
+   
     clock_t vecStart = clock();
-    mergeInsertionSort();
-    clock_t vecEnd = clock();
+    SortVec();
+    std::cout << "After: ";
+    printContainer(_vec);
 
+    clock_t vecEnd = clock();
+    double vecTime = static_cast<double>(vecEnd - vecStart) / CLOCKS_PER_SEC * 1000000;
+    
     clock_t deqStart = clock();
-    mergeInsertionSort();
+    SortDeq();
     clock_t deqEnd = clock();
+    double deqTime = static_cast<double>(deqEnd - deqStart) / CLOCKS_PER_SEC * 1000000;
+
+
+    std::cout << "Time to process a range of " << _vec.size()
+              << " elements with std::vector : " << std::fixed << std::setprecision(5)
+              << vecTime << " us" << std::endl;
+
+    std::cout << "Time to process a range of " << _deq.size()
+              << " elements with std::deque : " << std::fixed << std::setprecision(5)
+              << deqTime << " us" << std::endl;
 }

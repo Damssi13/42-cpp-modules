@@ -5,6 +5,7 @@
 #include "vector"
 #include "deque"
 #include "sstream"
+#include "iomanip"
 
 class rachid{
 private:
@@ -19,8 +20,12 @@ public:
     void    parse(int ac, char** av);
     void    sort();
     bool    isValidNumber(std::string str);
-    void    mergeInsertionSort();
-    std::vector<int> getInsertionPos(size_t size);
-};
+    void    SortVec();
+    void    SortDeq();
 
-void    print_vec(std::vector<int> vec);
+    std::vector<int> getInsertionPos(size_t size);
+    std::vector<int> getJacob(size_t size);
+    
+    template <typename Container>
+    void    printContainer(Container cont);
+};
