@@ -7,12 +7,12 @@ int main(int ac, char** av)
     if(ac != 2)
     {
         std::cerr << "Unvalid usage: ./btc [inputFile.txt]\n";
-        exit(1);
+        return(1);
     }
     try
     {
         BitcoinExchange coin("../data.csv");
-        coin.parse(av[1]); //input.txt
+        coin.parse(av[1]); 
     }
     catch(const std::runtime_error e)
     {

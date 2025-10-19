@@ -56,9 +56,7 @@ void    BitcoinExchange::parse(const std::string& file)
     }
     std::cout << _strs;
     filein.close();
-    exit(1);
-
-
+    return ;
 }
 
 std::string    BitcoinExchange::parseLine(std::string& line)
@@ -98,7 +96,6 @@ std::string    BitcoinExchange::parseLine(std::string& line)
     result << date << " => "  << (num * cit->second);
 
     return result.str();
-
 }
 
 
