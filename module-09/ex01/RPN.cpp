@@ -13,11 +13,6 @@ RPN& RPN::operator=(const RPN& other)
 
 RPN::~RPN() {}
 
-//FIRST CASE : 2 4 + 3 -
-//FOUTH CASE : 2 4 3 + -
-
-
-// read the 
 void    RPN::processExpresstion(const std::string& expression)
 {
     bool spaceFlag = false;
