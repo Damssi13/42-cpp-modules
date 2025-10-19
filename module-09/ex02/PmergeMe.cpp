@@ -1,12 +1,12 @@
-#include "PmergMe.hpp"
+#include "PmergeMe.hpp"
 
-template void rachid::printContainer<std::vector<int> >(const std::vector<int>);
+template void PmergeMe::printContainer<std::vector<int> >(const std::vector<int>);
 
-rachid::rachid() {}
+PmergeMe::PmergeMe() {}
 
-rachid::rachid(const rachid& other) : _vec(other._vec), _deq(other._deq) {}
+PmergeMe::PmergeMe(const PmergeMe& other) : _vec(other._vec), _deq(other._deq) {}
 
-rachid& rachid::operator=(const rachid& other)
+PmergeMe& PmergeMe::operator=(const PmergeMe& other)
 {
     if(this != &other)
     {
@@ -16,26 +16,119 @@ rachid& rachid::operator=(const rachid& other)
     return *this;
 }   
 
-rachid::~rachid() {}
+PmergeMe::~PmergeMe() {}
 
-
-void   rachid::parse(int ac, char **av)
+void   PmergeMe::parse(int ac, char **av)
 {
     for(int i = 1; i < ac ; i++)
     {
         std::istringstream iss(av[i]);
         long num;
         iss >> num;
-        // std::cout << num
         if(!isValidNumber(av[i]) || num > 2147483647)
             throw std::runtime_error("Error: Unvalid argument\n");
         _vec.push_back(num);
         _deq.push_back(num);
     }
-    // print_vec(_vec);
+}
+bool    PmergeMe::isValidNumber(std::string str)
+{
+    if(str.empty())
+        return false;
+    for(size_t i = 0; i < str.size(); i++)
+    {
+        if(!std::isdigit(str[i]))
+        return false;
+    }
+    return true;
 }
 
-std::vector<int> rachid::getInsertionPos(size_t size)
+template <typename Container> void    PmergeMe::printContainer(Container cont)
+{
+    typename Container::iterator it = cont.begin();
+    
+    while(it != cont.end())
+    {
+        std::cout << *it << " ";
+        it++;
+    }
+    std::cout << std::endl;
+}
+
+
+void    PmergeMe::SortVec()
+{
+    if(_vec.size() <= 1)//base case
+        return ;
+    
+    bool iSOdd = false;
+    int oddNumber = 0;
+    
+    if(_vec.size() % 2 == 1)// is odd
+    {
+        iSOdd = true;
+        oddNumber = _vec.back();
+        _vec.pop_back();
+    }
+    
+    std::vector<std::pair<int, int> > pairs;
+    for(size_t i = 0; i <  _vec.size(); i += 2)
+    {
+        int first = _vec[i];
+        int second = _vec[i + 1];
+            if(first > second)
+        std::swap(first, second);
+        pairs.push_back(std::make_pair(first, second));
+    }
+    
+    std::vector<int> winners;
+    for(size_t i = 0;i < pairs.size(); i++)
+        winners.push_back(pairs[i].second);
+    
+    if(winners.size() > 1)
+    {
+        _vec = winners;
+        SortVec();
+        winners = _vec;
+    }
+    
+    std::vector<int> result = winners;
+    
+    std::vector<int> losers;
+    for(size_t i = 0; i < pairs.size(); i++)
+        losers.push_back(pairs[i].first);
+    
+    //if losers are full --> insert the first element of losers to the result
+    if(!losers.empty())
+    {
+        std::vector<int>::iterator pos = std::lower_bound(result.begin(), result.end(), losers[0]);
+        result.insert(pos, losers[0]);
+    }
+    
+    //Insert the rest of the number using the jacobsthal sequence
+    if(losers.size() > 1)
+    {
+        std::vector<int>  insertionOrder= getInsertionPos(losers.size());
+        
+        for (size_t i = 0; i < insertionOrder.size(); i++)
+        {
+            int idx = insertionOrder[i];
+            if (idx > 0 && idx < (int)losers.size())
+            {
+                std::vector<int>::iterator pos = std::lower_bound(result.begin(), result.end(),  losers[idx]);
+                result.insert(pos,  losers[idx]);
+            }
+        }
+    }
+    //if it's odd insert the oddNumber
+    if(iSOdd)
+    {
+        std::vector<int>::iterator pos = std::lower_bound(result.begin(), result.end(), oddNumber);
+        result.insert(pos, oddNumber);
+    }
+    _vec = result;
+}
+std::vector<int> PmergeMe::getInsertionPos(size_t size)
 {
     std::vector<int> jacobSeq = getJacob(size);
     std::vector<int> order;
@@ -62,112 +155,10 @@ std::vector<int> rachid::getInsertionPos(size_t size)
             order.push_back(i);
         }
     }
-
     return order;
 }
-bool    rachid::isValidNumber(std::string str)
-{
-    if(str.empty())
-        return false;
-    for(size_t i = 0; i < str.size(); i++)
-    {
-        if(!std::isdigit(str[i]))
-            return false;
-    }
-    return true;
-}
 
-template <typename Container> void    rachid::printContainer(Container cont)
-{
-    typename Container::iterator it = cont.begin();
-    
-    while(it != cont.end())
-    {
-        std::cout << *it << " ";
-        it++;
-    }
-    std::cout << std::endl;
-}
-
-
-
-void    rachid::SortVec()
-{
-    if(_vec.size() <= 1)//base case
-    return ;
-    
-    bool iSOdd = false;
-    int oddNumber = 0;
-    
-    if(_vec.size() % 2 == 1)// is odd
-    {
-        iSOdd = true;
-        oddNumber = _vec.back();
-        _vec.pop_back();
-    }
-    
-    std::vector<std::pair<int, int> > pairs;
-    for(size_t i = 0; i <  _vec.size(); i += 2)
-    {
-        int first = _vec[i];
-        int second = _vec[i + 1];
-        if(first > second)
-        std::swap(first, second);
-        pairs.push_back(std::make_pair(first, second));
-    }
-    
-    std::vector<int> winners;
-    for(size_t i = 0;i < pairs.size(); i++)
-    winners.push_back(pairs[i].second);
-    
-    if(winners.size() > 1)
-    {
-        _vec = winners;
-        SortVec();
-        winners = _vec;
-    }
-    
-    
-    std::vector<int> result = winners;
-    
-    std::vector<int> losers;
-    for(size_t i = 0; i < pairs.size(); i++)
-    losers.push_back(pairs[i].first);
-    
-    //if losers are full --> insert the first element of losers to the result
-    if(!losers.empty())
-    {
-        std::vector<int>::iterator pos = std::lower_bound(result.begin(), result.end(), losers[0]);
-        result.insert(pos, losers[0]);
-    }
-    
-    //Insert the rest of the number using the jacobsthal sequence
-    if(losers.size() > 1)
-    {
-        std::vector<int>  insertionOrder= getInsertionPos(losers.size());
-        
-        for (size_t i = 0; i < insertionOrder.size(); i++)
-        {
-            int idx = insertionOrder[i];
-            if (idx > 0 && idx < (int)losers.size())
-            {
-                std::vector<int>::iterator pos = std::lower_bound(result.begin(), result.end(),  losers[idx]);
-                result.insert(pos,  losers[idx]);
-            }
-        }
-    }
-    
-    //if it's odd insert the oddNumber
-    if(iSOdd)
-    {
-        std::vector<int>::iterator pos = std::lower_bound(result.begin(), result.end(), oddNumber);
-        result.insert(pos, oddNumber);
-    }
-    
-    _vec = result;
-}
-
-std::vector<int> rachid::getJacob(size_t size)
+std::vector<int> PmergeMe::getJacob(size_t size)
 {
     std::vector<int> jacobsthal;
     jacobsthal.push_back(0);
@@ -181,12 +172,11 @@ std::vector<int> rachid::getJacob(size_t size)
         int next = lastNum + 2 * secondLastNum;
         jacobsthal.push_back(next);
     }
-    
     return jacobsthal;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////
-void    rachid::SortDeq()
+void    PmergeMe::SortDeq()
 {
     if(_deq.size() <= 1)//base case
         return ;
@@ -213,7 +203,7 @@ void    rachid::SortDeq()
     
     std::deque<int> winners;
     for(size_t i = 0;i < pairs.size(); i++)
-    winners.push_back(pairs[i].second);
+        winners.push_back(pairs[i].second);
     
     if(winners.size() > 1)
     {
@@ -227,7 +217,7 @@ void    rachid::SortDeq()
     
     std::deque<int> losers;
     for(size_t i = 0; i < pairs.size(); i++)
-    losers.push_back(pairs[i].first);
+        losers.push_back(pairs[i].first);
     
     //if losers are full --> insert the first element of losers to the result
     if(!losers.empty())
@@ -252,33 +242,32 @@ void    rachid::SortDeq()
         }
     }
     
-    //if it's odd insert the oddNumber
     if(iSOdd)
     {
         std::deque<int>::iterator pos = std::lower_bound(result.begin(), result.end(), oddNumber);
         result.insert(pos, oddNumber);
     }
-    
     _deq = result;
 }
 
-void    rachid::sort()
+void    PmergeMe::sort()
 {
     std::cout << "Before: ";
     printContainer(_vec);
    
     clock_t vecStart = clock();
     SortVec();
+    clock_t vecEnd = clock();
+
     std::cout << "After: ";
     printContainer(_vec);
 
-    clock_t vecEnd = clock();
-    double vecTime = static_cast<double>(vecEnd - vecStart) / CLOCKS_PER_SEC * 1000000;
+    double vecTime = static_cast<double>(vecEnd - vecStart);
     
     clock_t deqStart = clock();
     SortDeq();
     clock_t deqEnd = clock();
-    double deqTime = static_cast<double>(deqEnd - deqStart) / CLOCKS_PER_SEC * 1000000;
+    double deqTime = static_cast<double>(deqEnd - deqStart);
 
 
     std::cout << "Time to process a range of " << _vec.size()

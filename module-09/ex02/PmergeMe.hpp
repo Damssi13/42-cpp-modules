@@ -7,15 +7,15 @@
 #include "sstream"
 #include "iomanip"
 
-class rachid{
+class PmergeMe{
 private:
     std::vector<int> _vec;
     std::deque<int> _deq;
 public:
-    rachid();
-    rachid(const rachid& other);
-    rachid& operator=(const rachid& other);
-    ~rachid();
+    PmergeMe();
+    PmergeMe(const PmergeMe& other);
+    PmergeMe& operator=(const PmergeMe& other);
+    ~PmergeMe();
 
     void    parse(int ac, char** av);
     void    sort();

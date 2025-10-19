@@ -1,4 +1,4 @@
-#include "PmergMe.hpp"
+#include "PmergeMe.hpp"
 
 
 int main(int ac, char **av)
@@ -9,7 +9,7 @@ int main(int ac, char **av)
         return 1;
     }
     try{
-        rachid test1;
+        PmergeMe test1;
         test1.parse(ac, av);
         test1.sort();
     }
